@@ -1,0 +1,9 @@
+
+2022-08-24 13:11:26,292 ERROR [http-nio-8085-exec-2] c.e.e.l.MainController [MainController.java:19] Mensaje a nivel de ERROR
+2022-08-24 13:13:23,372 ERROR [http-nio-8085-exec-6] c.e.e.l.MainController [MainController.java:19] Mensaje a nivel de ERROR
+2022-08-24 13:14:01,056 ERROR [http-nio-8085-exec-5] c.e.e.l.MainController [MainController.java:19] Mensaje a nivel de ERROR
+2022-08-24 13:14:06,299 ERROR [http-nio-8085-exec-7] c.e.e.l.MainController [MainController.java:19] Mensaje a nivel de ERROR
+2022-08-24 13:14:38,296 ERROR [http-nio-8085-exec-3] c.e.e.l.MainController [MainController.java:19] Mensaje a nivel de ERROR
+2022-08-24 13:14:42,972 ERROR [http-nio-8085-exec-1] c.e.e.l.MainController [MainController.java:19] Mensaje a nivel de ERROR
+2022-08-24 13:14:46,714 ERROR [http-nio-8085-exec-4] c.e.e.l.MainController [MainController.java:19] Mensaje a nivel de ERROR
+2022-08-24 13:17:28,716 ERROR [http-nio-8085-exec-1] c.e.e.l.MainController [MainController.java:19] Mensaje a nivel de ERROR

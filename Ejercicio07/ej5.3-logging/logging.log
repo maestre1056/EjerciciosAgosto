@@ -1,0 +1,42 @@
+2022-08-24 09:43:43.821  INFO 3984 --- [main] com.example.ej5.logging.Application      : Starting Application using Java 17.0.2 on L2207035 with PID 3984 (C:\Java\EjerciciosGitLab\Ejercicio07\ej5.3-logging\target\classes started by antonio.maestre in C:\Java\EjerciciosGitLab\Ejercicio07\ej5.3-logging)
+2022-08-24 09:43:43.825  INFO 3984 --- [main] com.example.ej5.logging.Application      : No active profile set, falling back to 1 default profile: "default"
+2022-08-24 09:43:44.864  INFO 3984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-08-24 09:43:44.874  INFO 3984 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-24 09:43:44.874  INFO 3984 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-24 09:43:44.985  INFO 3984 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-24 09:43:44.985  INFO 3984 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1106 ms
+2022-08-24 09:43:45.360  INFO 3984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2022-08-24 09:43:45.369  INFO 3984 --- [main] com.example.ej5.logging.Application      : Started Application in 1.941 seconds (JVM running for 2.276)
+2022-08-24 09:43:45.372  INFO 3984 --- [main] com.example.ej5.logging.MainController   : Mensaje a nivel de INFO
+2022-08-24 09:43:45.372  WARN 3984 --- [main] com.example.ej5.logging.MainController   : Mensaje a nivel de WARNING
+2022-08-24 09:43:45.372 ERROR 3984 --- [main] com.example.ej5.logging.MainController   : Mensaje a nivel de ERROR
+2022-08-24 09:45:12.429  INFO 1824 --- [main] com.example.ej5.logging.Application      : Starting Application using Java 17.0.2 on L2207035 with PID 1824 (C:\Java\EjerciciosGitLab\Ejercicio07\ej5.3-logging\target\classes started by antonio.maestre in C:\Java\EjerciciosGitLab\Ejercicio07\ej5.3-logging)
+2022-08-24 09:45:12.433  INFO 1824 --- [main] com.example.ej5.logging.Application      : No active profile set, falling back to 1 default profile: "default"
+2022-08-24 09:45:13.545  INFO 1824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-08-24 09:45:13.557  INFO 1824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-24 09:45:13.558  INFO 1824 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-24 09:45:13.640  INFO 1824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-24 09:45:13.640  INFO 1824 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1149 ms
+2022-08-24 09:45:14.150  INFO 1824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2022-08-24 09:45:14.163  INFO 1824 --- [main] com.example.ej5.logging.Application      : Started Application in 2.165 seconds (JVM running for 2.468)
+2022-08-24 09:45:14.166  INFO 1824 --- [main] com.example.ej5.logging.MainController   : Mensaje a nivel de INFO
+2022-08-24 09:45:14.166  WARN 1824 --- [main] com.example.ej5.logging.MainController   : Mensaje a nivel de WARNING
+2022-08-24 09:45:14.166 ERROR 1824 --- [main] com.example.ej5.logging.MainController   : Mensaje a nivel de ERROR
+2022-08-24 09:47:19.074  INFO 14088 --- [main] com.example.ej5.logging.Application      : Starting Application using Java 17.0.2 on L2207035 with PID 14088 (C:\Java\EjerciciosGitLab\Ejercicio07\ej5.3-logging\target\classes started by antonio.maestre in C:\Java\EjerciciosGitLab\Ejercicio07\ej5.3-logging)
+2022-08-24 09:47:19.078  INFO 14088 --- [main] com.example.ej5.logging.Application      : No active profile set, falling back to 1 default profile: "default"
+2022-08-24 09:47:20.112  INFO 14088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-08-24 09:47:20.122  INFO 14088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-24 09:47:20.123  INFO 14088 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-24 09:47:20.201  INFO 14088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-24 09:47:20.202  INFO 14088 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1072 ms
+2022-08-24 09:47:20.571  INFO 14088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2022-08-24 09:47:20.582  INFO 14088 --- [main] com.example.ej5.logging.Application      : Started Application in 1.899 seconds (JVM running for 2.237)
+2022-08-24 09:51:33.360  INFO 10676 --- [main] com.example.ej5.logging.Application      : Starting Application using Java 17.0.2 on L2207035 with PID 10676 (C:\Java\EjerciciosGitLab\Ejercicio07\ej5.3-logging\target\classes started by antonio.maestre in C:\Java\EjerciciosGitLab\Ejercicio07\ej5.3-logging)
+2022-08-24 09:51:33.364  INFO 10676 --- [main] com.example.ej5.logging.Application      : No active profile set, falling back to 1 default profile: "default"
+2022-08-24 09:51:34.405  INFO 10676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-08-24 09:51:34.415  INFO 10676 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-24 09:51:34.415  INFO 10676 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-24 09:51:34.497  INFO 10676 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-24 09:51:34.497  INFO 10676 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1081 ms
+2022-08-24 09:51:34.861  INFO 10676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2022-08-24 09:51:34.869  INFO 10676 --- [main] com.example.ej5.logging.Application      : Started Application in 1.865 seconds (JVM running for 2.19)
