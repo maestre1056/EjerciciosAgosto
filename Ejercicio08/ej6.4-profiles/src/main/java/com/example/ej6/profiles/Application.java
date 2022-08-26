@@ -8,6 +8,11 @@ public class Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
+
+		MainController mainController=new MainController();
+
+		mainController.getValores();
+		//mainController.getPassword();
 	}
 
 }
