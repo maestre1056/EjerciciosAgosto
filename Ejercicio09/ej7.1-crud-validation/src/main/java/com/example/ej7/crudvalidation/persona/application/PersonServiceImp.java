@@ -1,4 +1,5 @@
 package com.example.ej7.crudvalidation.persona.application;
+import com.example.ej7.crudvalidation.exception.UnprocessableEntityException;
 import com.example.ej7.crudvalidation.persona.domain.Person;
 import com.example.ej7.crudvalidation.persona.infraestructure.controller.input.PersonInput;
 import com.example.ej7.crudvalidation.persona.infraestructure.controller.output.PersonOutput;
@@ -23,21 +24,21 @@ public class PersonServiceImp implements PersonService {
         newPersonDto.setCreated_date(new Date());
 
         if(newPersonDto.getUsername()==null)
-            throw new Exception("User field can not be null");
+            throw new UnprocessableEntityException("User field can not be null",422);
          if (newPersonDto.getUsername().length()>10||newPersonDto.getUsername().length()<6)
-            throw new  Exception("User field length is not between 6 and 10");
+            throw new UnprocessableEntityException("User field length is not between 6 and 10",422);
          if (newPersonDto.getPassword()==null)
-            throw  new Exception("Password can not be null");
+            throw  new UnprocessableEntityException("Password can not be null",422);
          if (newPersonDto.getName()==null)
-            throw new Exception("Name can not be null");
+            throw new UnprocessableEntityException("Name can not be null",422);
          if (newPersonDto.getCompany_email()==null)
-            throw  new Exception("Company email can not be null");
+            throw  new UnprocessableEntityException("Company email can not be null",422);
          if (newPersonDto.getPersonal_email()==null)
-            throw new Exception("Personal email can not be null");
+            throw new UnprocessableEntityException("Personal email can not be null",422);
          if (newPersonDto.getCity()==null)
-             throw new Exception("City can not be null");
+             throw new UnprocessableEntityException("City can not be null",422);
          if (newPersonDto.getCreated_date() ==null)
-            throw new Exception("City can not be null");
+            throw new UnprocessableEntityException("City can not be null",422);
 
         Person newPerson=newPersonDto.transformIntoPerson();
 
@@ -83,7 +84,7 @@ public class PersonServiceImp implements PersonService {
         Optional<Person> personOpt = personRepository.findById(id);
 
         if(personOpt.isEmpty())
-            throw new EntityNotFoundException("The person does no exist");
+            throw new com.example.ej7.crudvalidation.exception.EntityNotFoundException("Person is not be null",404);
         if(personInput.getUsername() == null)
             throw new Exception("User field can not be null");
         if(personInput.getUsername().length() > 10 || personInput.getUsername().length() < 6)
