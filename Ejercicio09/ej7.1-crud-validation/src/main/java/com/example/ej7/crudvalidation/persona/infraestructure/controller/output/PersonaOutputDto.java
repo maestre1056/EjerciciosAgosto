@@ -1,12 +1,8 @@
 package com.example.ej7.crudvalidation.persona.infraestructure.controller.output;
 
-import com.example.ej7.crudvalidation.persona.domain.Persona;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.util.Date;
-import java.util.Optional;
 
 @Data
 public class PersonaOutputDto {

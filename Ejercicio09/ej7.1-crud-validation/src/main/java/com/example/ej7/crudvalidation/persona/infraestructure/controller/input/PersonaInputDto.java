@@ -1,6 +1,5 @@
 package com.example.ej7.crudvalidation.persona.infraestructure.controller.input;
 
-import com.example.ej7.crudvalidation.persona.domain.Persona;
 import lombok.Data;
 
 import java.util.Date;

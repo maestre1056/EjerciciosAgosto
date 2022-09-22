@@ -2,8 +2,6 @@ package com.example.ej7.crudvalidation.persona.infraestructure.controller;
 
 import com.example.ej7.crudvalidation.exception.EntityNotFoundException;
 import com.example.ej7.crudvalidation.persona.application.PersonaService;
-import com.example.ej7.crudvalidation.persona.application.PersonaServiceImp;
-import com.example.ej7.crudvalidation.persona.domain.Persona;
 import com.example.ej7.crudvalidation.persona.infraestructure.controller.output.PersonaOutputDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,7 +11,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 public class PersonaGetController {

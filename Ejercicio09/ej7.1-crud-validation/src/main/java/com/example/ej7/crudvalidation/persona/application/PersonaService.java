@@ -2,7 +2,6 @@ package com.example.ej7.crudvalidation.persona.application;
 
 import com.example.ej7.crudvalidation.exception.EntityNotFoundException;
 import com.example.ej7.crudvalidation.exception.UnprocessableEntityException;
-import com.example.ej7.crudvalidation.persona.domain.Persona;
 import com.example.ej7.crudvalidation.persona.infraestructure.controller.input.PersonaInputDto;
 import com.example.ej7.crudvalidation.persona.infraestructure.controller.output.PersonaOutputDto;
 
