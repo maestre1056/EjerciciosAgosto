@@ -61,9 +61,9 @@ public class PersonaServiceImp implements PersonaService {
     }
 
     @Override
-    public PersonaOutputDto getById(Long id)throws EntityNotFoundException{
+    public PersonaOutputDto getById(Long idPersona)throws EntityNotFoundException{
 
-        Optional<Persona> personaOp=personaRepository.findById(id);
+        Optional<Persona> personaOp=personaRepository.findById(idPersona);
         if(personaOp.isEmpty())
             throw new EntityNotFoundException("Persona no encontrada con ese id");
 
@@ -80,8 +80,8 @@ public class PersonaServiceImp implements PersonaService {
     }
 
     @Override
-    public String delete(Long id) {
-            Optional<Persona> personaOpt= personaRepository.findById(id);
+    public String delete(Long idPersona) {
+            Optional<Persona> personaOpt= personaRepository.findById(idPersona);
             if (personaOpt.isEmpty())
                 throw new EntityNotFoundException("La persona con este id no existe");
             personaRepository.delete(personaOpt.get());
@@ -92,8 +92,8 @@ public class PersonaServiceImp implements PersonaService {
     }
 
     @Override
-    public PersonaOutputDto updatePersona(Long id,PersonaInputDto personaDto)throws EntityNotFoundException,UnprocessableEntityException {
-        Optional<Persona> personaOpt=personaRepository.findById(id);
+    public PersonaOutputDto updatePersona(Long idPersona,PersonaInputDto personaDto)throws EntityNotFoundException,UnprocessableEntityException {
+        Optional<Persona> personaOpt=personaRepository.findById(idPersona);
         if(personaOpt.isEmpty())
             throw new EntityNotFoundException("No existe la persona con este id");
         if(personaDto.getUsername()==null)
@@ -114,11 +114,16 @@ public class PersonaServiceImp implements PersonaService {
             throw new UnprocessableEntityException("Campo email debe contener @");
 
        Persona  personaSave=PersonaMapper.Instance.personaInputDtoToPersona(personaDto);
-        personaSave.setId(id);
+        personaSave.setIdPersona(idPersona);
         personaSave.setCreatedDate(personaOpt.get().getCreatedDate());
        personaSave= personaRepository.save(personaSave);
 
         return PersonaMapper.Instance.personaToPersonaOutputDto(personaSave);
+    }
+
+    @Override
+    public Optional<Persona> getPersonaOptional(Long idPersona) {
+        return personaRepository.findById(idPersona);
     }
 
 

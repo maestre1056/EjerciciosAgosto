@@ -5,10 +5,10 @@ import lombok.Data;
 
 @Data
 public class StudentAllDetailsDto {
-    private Long id;
+    private Long idStudent;
     private Integer numHoursWeek;
     private String comments;
-    private Persona id_Persona;
+    private Persona persona;
     private Persona username;
     private Persona password;
     private Persona name;

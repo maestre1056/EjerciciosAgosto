@@ -1,9 +1,9 @@
-package com.example.ej7.crudvalidation.estudiante.infraestructure.controller;
+package com.example.ej7.crudvalidation.profesor.infraestructure.controller;
 
-import com.example.ej7.crudvalidation.estudiante.infraestructure.application.StudentService;
-import com.example.ej7.crudvalidation.estudiante.infraestructure.controller.input.StudentInputDto;
-import com.example.ej7.crudvalidation.estudiante.infraestructure.controller.output.StudentOutputDto;
 import com.example.ej7.crudvalidation.exception.EntityNotFoundException;
+import com.example.ej7.crudvalidation.profesor.application.ProfesorService;
+import com.example.ej7.crudvalidation.profesor.infraestructure.controller.input.ProfesorInputDto;
+import com.example.ej7.crudvalidation.profesor.infraestructure.controller.output.ProfesorOutputDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,21 +13,21 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class StudentPutController {
-
+public class ProfesorPutController {
     @Autowired
-    StudentService studentService;
+    ProfesorService profesorService;
 
-    @PutMapping("/estudiante/{id}")
-    public ResponseEntity<StudentOutputDto> updateStudent(@PathVariable Long id, @RequestBody StudentInputDto studentInputDto)
+    @PutMapping("/profesor/{id}")
+    public ResponseEntity<ProfesorOutputDto> updateProfesor(@PathVariable Long id, @RequestBody ProfesorInputDto profesorInputDto)
     throws EntityNotFoundException {
         ResponseEntity responseEntity=new ResponseEntity("Internal error", HttpStatus.INTERNAL_SERVER_ERROR);
 
         try{
-            responseEntity=new ResponseEntity<StudentOutputDto>(studentService.updateStudent(studentInputDto, id),HttpStatus.OK);
+            responseEntity=new ResponseEntity<ProfesorOutputDto>(profesorService.updateProfesor(profesorInputDto,id),HttpStatus.OK);
         }catch (EntityNotFoundException e){
             responseEntity=new ResponseEntity(e.getMessage(),HttpStatus.NOT_FOUND);
         }
-        return responseEntity;
+        return  responseEntity;
     }
+
 }

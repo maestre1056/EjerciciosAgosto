@@ -15,10 +15,10 @@ import java.util.List;
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Long id_student;
+    private Long idStudent;
 
     @OneToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "idPersona")
     private Persona persona;
 
     @Column(nullable = false)
@@ -28,14 +28,17 @@ public class Student {
     private String comments;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_profesor")
+    @JoinColumn(name = "idProfesor")
     private Profesor profesor;
 
     @Column(nullable = false)
     private String rama;
 
-    @OneToMany
-    @JoinColumn(name = "asignatura")
+    @ManyToMany( fetch = FetchType.LAZY,cascade = CascadeType.REMOVE)
+    @JoinTable(name = "estudios_student",
+            joinColumns = @JoinColumn(name = "id_studios",
+                    referencedColumnName = "idStudent"),
+            inverseJoinColumns = @JoinColumn(name = "id_estudios", referencedColumnName = "idEstudios"))
     private List<AlumnosEstudios> estudios;
 
 

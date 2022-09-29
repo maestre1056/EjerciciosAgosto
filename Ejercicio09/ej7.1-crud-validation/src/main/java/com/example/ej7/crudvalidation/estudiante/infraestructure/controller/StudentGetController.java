@@ -1,6 +1,6 @@
 package com.example.ej7.crudvalidation.estudiante.infraestructure.controller;
 
-import com.example.ej7.crudvalidation.estudiante.application.StudentService;
+import com.example.ej7.crudvalidation.estudiante.infraestructure.application.StudentService;
 import com.example.ej7.crudvalidation.estudiante.infraestructure.controller.output.StudentOutputDto;
 import com.example.ej7.crudvalidation.exception.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ public class StudentGetController {
     @Autowired
     StudentService studentService;
 
-    @GetMapping("/estudiante")
+    @GetMapping("/estudiante/list")
     public List<StudentOutputDto> getAll(){
         return studentService.getAll();
     }

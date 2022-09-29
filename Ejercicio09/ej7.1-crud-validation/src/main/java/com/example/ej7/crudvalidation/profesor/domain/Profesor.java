@@ -5,22 +5,23 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Getter
 @Setter
-public class Profesor {
+public class Profesor implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    Long id_profesor;
+    private Long idProfesor;
 
     @OneToOne
-    @JoinColumn(name = "id")
-    Persona persona;
+    @JoinColumn(name = "idPersona")
+    private Persona persona;
 
     @Column
-    String comments;
+    private String comments;
 
     @Column(nullable = false)
-    String branch;
+    private String branch;
 }

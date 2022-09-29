@@ -1,4 +1,4 @@
-package com.example.ej7.crudvalidation.estudiante.application;
+package com.example.ej7.crudvalidation.estudiante.infraestructure.application;
 
 import com.example.ej7.crudvalidation.estudiante.infraestructure.controller.input.StudentInputDto;
 import com.example.ej7.crudvalidation.estudiante.infraestructure.controller.output.StudentOutputDto;
@@ -8,13 +8,17 @@ import com.example.ej7.crudvalidation.exception.UnprocessableEntityException;
 import java.util.List;
 
 public interface StudentService {
-    StudentOutputDto addStudent(StudentInputDto studentInputDto);
+    String addStudent(StudentInputDto studentInputDto);
 
     List<StudentOutputDto> getAll();
 
-    StudentOutputDto getById(Long id) throws EntityNotFoundException;
+    StudentOutputDto getById(Long idStudent) throws EntityNotFoundException;
 
-    String deleteStudent(Long id) throws EntityNotFoundException;
+    String deleteStudent(Long idStudent) throws EntityNotFoundException;
 
     StudentOutputDto updateStudent(StudentInputDto studentInputDto,Long id)throws EntityNotFoundException, UnprocessableEntityException;
+
+    String addSubjectToStudent(Long idStudent,List<Long> idEstudios);
+
+    String deleteSubjectFromStudent(Long idStudent, List<Long> idEstudios);
 }

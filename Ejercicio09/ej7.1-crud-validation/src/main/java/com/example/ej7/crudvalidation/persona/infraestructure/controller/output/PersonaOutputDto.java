@@ -6,7 +6,7 @@ import java.util.Date;
 
 @Data
 public class PersonaOutputDto {
-    private Long id;
+    private Long idPersona;
     private String username;
     private String name;
     private String surname;

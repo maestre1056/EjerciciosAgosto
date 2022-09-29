@@ -7,6 +7,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Getter
@@ -14,26 +15,25 @@ import java.util.Date;
 public class AlumnosEstudios {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    Long id;
+    private Long idEstudios;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_profesor")
-    Profesor profesor;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "idProfesor")
+    private Profesor profesor;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name="id_student")
-    Student student;
-
-    @Column
-    String asignatura;
+    @ManyToMany(mappedBy = "estudios")
+    private List<Student> students;
 
     @Column
-    String comment;
+    private String asignatura;
+
+    @Column
+    private String comment;
 
     @Column(nullable = false)
-    Date initialDate;
+    private Date initialDate;
 
     @Column
-    Date finishDate;
+    private Date finishDate;
 
 }

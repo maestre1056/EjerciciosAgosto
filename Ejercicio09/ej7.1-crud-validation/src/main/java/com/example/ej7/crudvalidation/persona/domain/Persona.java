@@ -14,7 +14,7 @@ import java.util.Date;
 public class Persona implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Long id;
+    private Long idPersona;
 
     @Column(length=10, nullable = false)
     private String username;
