@@ -7,6 +7,7 @@ import com.example.ej7.crudvalidation.persona.infraestructure.controller.output.
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,7 +17,8 @@ public class PersonaAddController {
     @Autowired
     PersonaService personaService;
 
-    @PostMapping("/persona")
+    @CrossOrigin(origins = {"*"})
+    @PostMapping("/addperson")
     public ResponseEntity<PersonaOutputDto>  addPersona(@RequestBody PersonaInputDto personaInputDto) throws UnprocessableEntityException {
         ResponseEntity responseEntity=new ResponseEntity<>("Error interno", HttpStatus.INTERNAL_SERVER_ERROR);
 
