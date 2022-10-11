@@ -1,4 +1,4 @@
-package com.bosonit2.Kafka;
+package com.bosonit.ej12.kafka;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
