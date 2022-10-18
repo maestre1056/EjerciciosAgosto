@@ -3,11 +3,17 @@ package com.example.ej7.crudvalidation.persona.application;
 import com.example.ej7.crudvalidation.exception.EntityNotFoundException;
 import com.example.ej7.crudvalidation.exception.UnprocessableEntityException;
 import com.example.ej7.crudvalidation.persona.domain.Persona;
+import com.example.ej7.crudvalidation.persona.domain.PersonaPage;
+import com.example.ej7.crudvalidation.persona.domain.PersonaSearchCriteria;
 import com.example.ej7.crudvalidation.persona.infraestructure.controller.input.PersonaInputDto;
 import com.example.ej7.crudvalidation.persona.infraestructure.controller.mapper.PersonaMapper;
 import com.example.ej7.crudvalidation.persona.infraestructure.controller.output.PersonaOutputDto;
+import com.example.ej7.crudvalidation.persona.infraestructure.controller.output.PersonaOutputDtoNew;
+import com.example.ej7.crudvalidation.persona.infraestructure.repository.PersonaCriteriaRepository;
 import com.example.ej7.crudvalidation.persona.infraestructure.repository.PersonaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import org.springframework.stereotype.Service;
 
 //import javax.persistence.EntityNotFoundException;
@@ -21,6 +27,9 @@ public class PersonaServiceImp implements PersonaService {
 
     @Autowired
     PersonaRepository personaRepository;
+
+    @Autowired
+    PersonaCriteriaRepository personaCriteriaRepository;
 
     @Override
     public PersonaOutputDto addPersona(PersonaInputDto personaDto) throws UnprocessableEntityException {
@@ -124,6 +133,16 @@ public class PersonaServiceImp implements PersonaService {
     @Override
     public Optional<Persona> getPersonaOptional(Long idPersona) {
         return personaRepository.findById(idPersona);
+    }
+
+    @Override
+    public Page<PersonaOutputDtoNew> getData(PersonaPage page, PersonaSearchCriteria personaSearchCriteria) {
+
+        Page<Persona> personPage = personaCriteriaRepository.findAllWithFilters(page,personaSearchCriteria);
+        List<PersonaOutputDtoNew> personaOutputDtoList= personPage.getContent().stream().map(PersonaOutputDtoNew::new).toList();
+
+
+        return new PageImpl<>(personaOutputDtoList,personPage.getPageable(),personPage.getTotalElements());
     }
 
 
