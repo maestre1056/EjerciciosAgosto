@@ -1,5 +1,6 @@
-package com.bosonit3.mongo.person.infraestructure.output;
+package com.bosonit.nuevoMongo4.person.infraestructure.controller.output;
 
+import com.bosonit.nuevoMongo4.person.domain.Person;
 import lombok.Data;
 
 import java.util.Date;
@@ -15,4 +16,7 @@ public class PersonOutputDto {
     private String city;
     private boolean active;
     private Date createdDate;
+
+
+
 }

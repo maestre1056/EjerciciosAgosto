@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -47,7 +48,16 @@ public class PersonServiceImp implements PersonService{
 
     @Override
     public List<PersonOutputDto> findPeopleByUsername(String username) {
-        return null;
+       List<Person> personList = personRepository.findByUsername(username);
+       List<PersonOutputDto> p1 =new ArrayList<>();
+       for(Person person:personList) {
+           if(person.getUsername().equals(username)){
+            PersonOutputDto personOutputDto=PersonMapper.Instance.personToPersonOutputDto(person);
+            p1.add(personOutputDto);
+           }
+
+       }
+        return p1;
     }
 
     @Override

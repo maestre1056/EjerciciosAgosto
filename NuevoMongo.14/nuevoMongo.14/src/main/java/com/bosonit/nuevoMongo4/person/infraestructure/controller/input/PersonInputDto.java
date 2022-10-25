@@ -1,13 +1,13 @@
-package com.bosonit3.mongo.person.infraestructure.output;
+package com.bosonit.nuevoMongo4.person.infraestructure.controller.input;
 
 import lombok.Data;
 
 import java.util.Date;
 
 @Data
-public class PersonOutputDto {
-    private String id;
+public class PersonInputDto {
     private String username;
+    private String password;
     private String name;
     private String surname;
     private String companyEmail;
