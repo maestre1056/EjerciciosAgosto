@@ -50,6 +50,7 @@ public class PersonServiceImp implements PersonService{
 
     @Override
     public Page<PersonOutputNew> getAll(Integer page) {
+
         Sort sort = Sort.by(Sort.Direction.ASC, "username");
         Pageable pageable = PageRequest.of(page,3,sort);
 
