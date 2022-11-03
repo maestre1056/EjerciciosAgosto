@@ -44,19 +44,21 @@ public class FileController {
 
     }
 
-    }
-
-    /*
-
     @GetMapping("files/{filename:.+}")
     public ResponseEntity<Resource> getFile(@PathVariable String filename){
-       // Resource file = fileService.load(filename);
+         Resource file = fileService.loadByName(filename);
 
         return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION,
                 "attachment; filename=\""+ file.getFilename()+"\"").body(file);
     }
 
-     */
+    }
+
+
+
+
+
+
 
 
 
