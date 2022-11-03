@@ -28,8 +28,8 @@ public class ControllerObject {
         paths.add(path);
     }
 
-    public void addQuerys(String key, String value){
-        querys.put(key, value);
+    public void addQuerys(Map query){
+        querys.putAll(query);
     }
 
 }
