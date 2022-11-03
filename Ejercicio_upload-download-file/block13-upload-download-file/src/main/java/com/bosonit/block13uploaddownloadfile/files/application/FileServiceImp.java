@@ -17,7 +17,7 @@ import java.nio.file.Paths;
 
 @Service
 public class FileServiceImp implements FileService{
-   private final Path root = Paths.get("files");
+   private final Path root = Paths.get("storage");
 
    @Autowired
    FileDBService fileDBService;
