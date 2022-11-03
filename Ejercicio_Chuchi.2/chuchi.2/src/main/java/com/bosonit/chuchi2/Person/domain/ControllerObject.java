@@ -15,19 +15,21 @@ public class ControllerObject {
     List<String> paths;
 
     //Map<String,String> querys;
-    Map<String,String> headers;
+    Map<String,String> querys;
     //String urlOrigen;
 
 
     public ControllerObject(){
         paths = new ArrayList<>();
-        headers = new HashMap<>();
+        querys = new HashMap<>();
     }
 
     public  void addPaths(String path){
         paths.add(path);
     }
 
-    //public void addMap(String String)
+    public void addQuerys(String key, String value){
+        querys.put(key, value);
+    }
 
 }
