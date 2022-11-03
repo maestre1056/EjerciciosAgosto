@@ -1,22 +1,19 @@
 package com.bosonit.block13uploaddownloadfile.files.application;
 
+import com.bosonit.block13uploaddownloadfile.files.domain.File;
 import org.springframework.core.io.Resource;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.IOException;
-import java.nio.file.Path;
-import java.util.stream.Stream;
-
 public interface FileService {
-    public void init() throws IOException;
+    public void init() ;
 
-    public void save(MultipartFile file);
+    public File save(MultipartFile file, String type) throws Exception;
 
-    public Resource load(String filename);
+    public Resource loadByName(String filename);
+
+    public Resource loadById(Long id);
 
     public void deleteAll();
 
-    public Stream<Path> loadAll();
 
-    public String deleteFile(String filename);
 }

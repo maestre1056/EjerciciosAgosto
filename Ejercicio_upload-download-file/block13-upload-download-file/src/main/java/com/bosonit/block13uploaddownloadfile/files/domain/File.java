@@ -22,21 +22,24 @@ public class File {
     private Long id;
 
     @Column
-    private String metadata;
+    private String category;
 
     @Column
     private String name;
 
     @Column
+    private String root;
+
+    @Column
     LocalDateTime uploadDate;
 
 
-    public File(String metadata, String name, LocalDateTime uploadDate) {
-        this.metadata = metadata;
-        this.name = name;
-        this.uploadDate = uploadDate;
+    public File(String name, String category, String root) {
+        setName(name);
+        setCategory(category);
+        setRoot(root);
+        setUploadDate(LocalDateTime.now());
     }
 
-    public File(String filename, String url) {
-    }
+
 }

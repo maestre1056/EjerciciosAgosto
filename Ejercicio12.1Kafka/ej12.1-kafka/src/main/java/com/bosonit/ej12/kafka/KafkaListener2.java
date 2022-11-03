@@ -15,6 +15,6 @@ public class KafkaListener2 {
     @KafkaListener(topics = "${message.topic.name:topic1}", groupId = "${message.group.name:group1}")
     public void listenTopic1(String message) {
         System.out.println("Recieved Message of topic1 in  listener: " + message);
-        kafkaMessageProducer.sendMessage("topic2", "Mensaje Recibido: " + message);
+        //kafkaMessageProducer.sendMessage("topic2", "Mensaje Recibido: " + message);
     }
 }
