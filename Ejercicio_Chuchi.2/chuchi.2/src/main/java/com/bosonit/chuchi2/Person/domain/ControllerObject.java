@@ -12,28 +12,19 @@ import java.util.Map;
 @Getter
 @Setter
 public class ControllerObject {
-    List<String> paths;
-    Map<String,String> headers;
-    Map<String,String> querys;
+    List<String> paths = new ArrayList<>();
+    List<Map> headers = new ArrayList<>();
+    List<Map> querys = new ArrayList<>();
     //String urlOrigen;
 
 
-    public ControllerObject(){
-        paths = new ArrayList<>();
-        querys = new HashMap<>();
-        headers = new HashMap<>();
-    }
 
-    public  void addPaths(String path){
-        paths.add(path);
-    }
 
-    public void addQuerys(Map query){
-        querys.putAll(query);
-    }
-
-    public void addHeaders(Map header){
-        headers.putAll(header);
+    public ControllerObject(String path1, String path2, HashMap<String,String> query,HashMap<String,String> header) {
+        this.paths.add(path1);
+        this.paths.add(path2);
+        this.querys.add(query);
+        this.headers.add(header);
     }
 
 }
