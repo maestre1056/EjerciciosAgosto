@@ -3,10 +3,7 @@ package com.bosonit.chuchi2.Person.infraestructure;
 import com.bosonit.chuchi2.Person.application.ServiceControllerObject;
 import com.bosonit.chuchi2.Person.domain.ControllerObject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
@@ -18,9 +15,10 @@ public class Controller {
     @GetMapping(value = {"*","{path}","{path}/{path2}"})
     public ControllerObject paths(@PathVariable (required = false) String path,
                                   @PathVariable (required = false)  String path2,
-                                  @RequestParam (required = false) Map<String,String> query)
+                                  @RequestParam (required = false) Map<String,String> query,
+                                  @RequestHeader (required = false) Map<String,String> headers)
                                   {
-        return serviceController.returnPath(path,path2,query);
+        return serviceController.pathQueryHeader(path,path2,query,headers);
     }
 
     @GetMapping(value = {"","/one"})

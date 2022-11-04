@@ -13,8 +13,7 @@ import java.util.Map;
 @Setter
 public class ControllerObject {
     List<String> paths;
-
-    //Map<String,String> querys;
+    Map<String,String> headers;
     Map<String,String> querys;
     //String urlOrigen;
 
@@ -22,6 +21,7 @@ public class ControllerObject {
     public ControllerObject(){
         paths = new ArrayList<>();
         querys = new HashMap<>();
+        headers = new HashMap<>();
     }
 
     public  void addPaths(String path){
@@ -30,6 +30,10 @@ public class ControllerObject {
 
     public void addQuerys(Map query){
         querys.putAll(query);
+    }
+
+    public void addHeaders(Map header){
+        headers.putAll(header);
     }
 
 }
