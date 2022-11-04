@@ -52,6 +52,14 @@ public class FileController {
                 "attachment; filename=\""+ file.getFilename()+"\"").body(file);
     }
 
+    @GetMapping("files/id/{id}")
+    public ResponseEntity<Resource> getFileById(@PathVariable Long id){
+        Resource file = fileService.loadById(id);
+
+        return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION,
+                "atachment; filename=\""+ file.getFilename()+ "\"").body(file);
+    }
+
     }
 
 
