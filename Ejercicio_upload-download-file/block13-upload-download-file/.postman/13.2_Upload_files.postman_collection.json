@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "a54d3e48-a95c-48f3-9d0a-aa5d23ad7f48",
+		"name": "13.2_Upload_files",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22851801"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/upload/plain",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/antonio.maestre/Downloads/Desktop/compose.png"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/upload/png",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"upload",
+						"png"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/upload/plain",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/antonio.maestre/Downloads/Desktop/compose.png"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/upload/png",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"upload",
+						"png"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/files/dockerfile.txt",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"files",
+						"dockerfile.txt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/files/id/21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"files",
+						"id",
+						"21"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
