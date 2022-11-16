@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="82886ce3-8d4a-4c71-8c24-88da333dec46" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Ejercicio01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio01/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio01/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio01/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio09/ej7.1-crud-validation/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio09/ej7.1-crud-validation/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio09/ej7.1-crud-validation/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio09/ej7.1-crud-validation/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio09/ej7.1-crud-validation/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio09/ej7.1-crud-validation/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio09/ej7.1-crud-validation/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio09/ej7.1-crud-validation/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio09/ej7.1-crud-validation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio09/ej7.1-crud-validation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio09/ej7.1-crud-validation/src/main/java/com/example/ej7/crudvalidation/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio09/ej7.1-crud-validation/src/main/java/com/example/ej7/crudvalidation/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio09/ej7.1-crud-validation/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio09/ej7.1-crud-validation/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio09/ej7.1-crud-validation/src/test/java/com/example/ej7/crudvalidation/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio09/ej7.1-crud-validation/src/test/java/com/example/ej7/crudvalidation/ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/cabecera/application/ServiceCabeceraImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/cabecera/application/ServiceCabeceraImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/cabecera/domain/Cabecera.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/cabecera/domain/Cabecera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/cabecera/infraestructure/CabeceraInputDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/cabecera/infraestructure/CabeceraInputDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/cabecera/infraestructure/CabeceraOutputDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/cabecera/infraestructure/CabeceraOutputDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/cabecera/infraestructure/FacturaOutputDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/cabecera/infraestructure/FacturaOutputDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/cabecera/infraestructure/controller/CabeceraRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/cabecera/infraestructure/controller/CabeceraRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/cliente/domain/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/cliente/domain/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/cliente/infraestructure/ClienteInputDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/cliente/infraestructure/ClienteInputDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/cliente/infraestructure/ClienteOutputDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/cliente/infraestructure/ClienteOutputDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/cliente/infraestructure/repository/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/cliente/infraestructure/repository/ClienteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/lineas/domain/Lineas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/lineas/domain/Lineas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/lineas/infraestructure/LineasInputDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/lineas/infraestructure/LineasInputDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/lineas/infraestructure/LineasOutputDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/lineas/infraestructure/LineasOutputDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/lineas/infraestructure/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/lineas/infraestructure/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/lineas/infraestructure/repository/LineasRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/lineas/infraestructure/repository/LineasRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <list id="5feec2f1-ed30-4f2a-b83e-34932e43bd7b" name="Changes by adrian.molina" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2E1nph478TV3qLQApPvW2rzyoSn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_directory_selection": "C:/Java/EjerciciosGitLab/Ejercicio09/ej7.1-crud-validation/src/test/java",
+    "last_opened_file_path": "C:/Java/EjerciciosGitLab/ej-chuchi.3-crud",
+    "settings.editor.selected.configurable": "File.Encoding"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.ej7.crudvalidation.persona.application" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.ej7.crudvalidation.persona.infraestructure" />
+      <recent name="com.example.ej7.crudvalidation.persona.infraestructure.controllerMapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Run">
+    <configuration name="Run" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.example.ej7.crudvalidation.Application" />
+      <module name="ej15-testingNew" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compilar" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="package" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="ej7.1-crud-validation [spring-boot:build-image]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="spring-boot:build-image" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.micrudspringboot: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="micrudspringboot" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Run" />
+      <item itemvalue="Docker.docker-compose.yml.micrudspringboot: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Maven.compilar" />
+      <item itemvalue="Maven.ej7.1-crud-validation [spring-boot:build-image]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.micrudspringboot: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82886ce3-8d4a-4c71-8c24-88da333dec46" name="Changes" comment="" />
+      <created>1661772143530</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661772143530</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ej7/crudvalidation/estudios/infraestructure/controller/addEstudios.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ej7/crudvalidation/profesor/application/ProfesorServiceImp.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ej7/crudvalidation/estudios/infraestructure/controller/EstudiosGetController.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ej7/crudvalidation/estudiante/infraestructure/application/StudentServiceImp.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="profesorservice.getall()" />
+        <watch expression="profesorService.getAll()" />
+        <watch expression="profesorRepository.findAll()" />
+        <watch expression="studentRepository.findAll()" />
+        <watch expression="studentRepository.save(studentEntity)" />
+      </configuration>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/com/example/ej7/crudvalidation/profesor/application/ProfesorServiceImp.java" line="64">
+        <watch expression="ProfesorMapper.Instance.profesorToProfesorOutputDto(profesor)" />
+      </inline-watch>
+    </watches-manager>
+  </component>
+</project>

@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "4cc0e0a8-8638-4e37-a558-9fda5db8e0d4",
+		"name": "Exam_Crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22851801"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/factura/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/factura/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"factura",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/linea/2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"proNombre\":\"mielda\",\r\n   \"cantidad\":15.4,\r\n   \"precio\":89.5 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/linea/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"linea",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/factura/3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/factura/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"factura",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
