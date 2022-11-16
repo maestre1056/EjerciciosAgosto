@@ -79,4 +79,15 @@ public class PersonServiceImp implements PersonService{
     public PersonOutputDto update(Long id) {
         return null;
     }
+
+    @Override
+    public List<PersonOutputDto> findPeople() {
+        List<Person> personList = personRepository.findAll();
+        List<PersonOutputDto> personOutputDtoList = new ArrayList<>();
+        for(Person person:personList){
+            PersonOutputDto personOutputDto = PersonMapper.Instance.personToPersonOutputDto(person);
+            personOutputDtoList.add(personOutputDto);
+        }
+        return personOutputDtoList;
+    }
 }

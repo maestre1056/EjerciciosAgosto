@@ -92,4 +92,21 @@ public class PersonServiceImpTest {
         assertThrows(EntityNotFoundException.class,()->{underTest.findPeopleByUsername(isNull());});
 
     }
+    @Test
+    void CanGetPeople(){
+        // given
+        List<Person> personList = new ArrayList<>();
+        personList.add(person);
+        when(personRepository.findAll()).thenReturn(personList);
+
+        //when
+        List<PersonOutputDto> personOutputList = underTest.findPeople();
+
+        //then
+        verify(personRepository).findAll();
+        assertThat(personOutputList).isNotNull();
+        assertThat(personOutputList.size()).isEqualTo(1);
+        assertThat(personOutputList).isExactlyInstanceOf(ArrayList.class);
+
+    }
 }

@@ -19,4 +19,6 @@ public interface PersonService {
     String deletePerson(Long id);
 
     PersonOutputDto update(Long id);
+
+    List<PersonOutputDto> findPeople();
 }

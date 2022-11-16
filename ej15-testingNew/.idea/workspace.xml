@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0b3bc4fc-f501-48eb-ba6e-f0b95968eef6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bosonit3/mongo/person/application/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bosonit3/mongo/person/application/PersonService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bosonit3/mongo/person/application/PersonServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bosonit3/mongo/person/application/PersonServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bosonit3/mongo/person/exception/EntityNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bosonit3/mongo/person/exception/EntityNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/bosonit3/mongo/service/PersonServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bosonit3/mongo/service/PersonServiceImpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bosonit3/mongo/service/PersonServiceImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bosonit3/mongo/service/PersonServiceImpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.PersonServiceImpTest.idThrowException">
+  <component name="RunManager" selected="JUnit.PersonServiceImpTest.CanGetPeople">
     <configuration name="PersonServiceImpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ej15-testingNew" />
       <extension name="coverage">
@@ -79,6 +79,22 @@
       <option name="PACKAGE_NAME" value="com.bosonit3.mongo.service" />
       <option name="MAIN_CLASS_NAME" value="com.bosonit3.mongo.service.PersonServiceImpTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonServiceImpTest.CanGetPeople" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ej15-testingNew" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bosonit3.mongo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bosonit3.mongo.service" />
+      <option name="MAIN_CLASS_NAME" value="com.bosonit3.mongo.service.PersonServiceImpTest" />
+      <option name="METHOD_NAME" value="CanGetPeople" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,22 +141,6 @@
       <option name="PACKAGE_NAME" value="com.bosonit3.mongo.service" />
       <option name="MAIN_CLASS_NAME" value="com.bosonit3.mongo.service.PersonServiceTest" />
       <option name="METHOD_NAME" value="CanGetAllPeopleByUsername" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonServiceTest.viewId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ej15-testingNew" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bosonit3.mongo.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bosonit3.mongo.service" />
-      <option name="MAIN_CLASS_NAME" value="com.bosonit3.mongo.service.PersonServiceTest" />
-      <option name="METHOD_NAME" value="viewId" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -201,20 +201,20 @@
     <list>
       <item itemvalue="Application.Ruun" />
       <item itemvalue="JUnit.PersonServiceImpTest" />
+      <item itemvalue="JUnit.PersonServiceImpTest.CanGetPeople" />
       <item itemvalue="JUnit.PersonServiceImpTest.idThrowException" />
       <item itemvalue="JUnit.PersonServiceTest" />
       <item itemvalue="JUnit.PersonServiceTest.CanGetAllPeopleByUsername" />
-      <item itemvalue="JUnit.PersonServiceTest.viewId" />
       <item itemvalue="Maven.13.2-mongo [spring-boot:build-image]" />
       <item itemvalue="Maven.Compilation" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PersonServiceImpTest.CanGetPeople" />
         <item itemvalue="JUnit.PersonServiceImpTest.idThrowException" />
         <item itemvalue="JUnit.PersonServiceImpTest" />
         <item itemvalue="JUnit.PersonServiceTest" />
         <item itemvalue="JUnit.PersonServiceTest.CanGetAllPeopleByUsername" />
-        <item itemvalue="JUnit.PersonServiceTest.viewId" />
       </list>
     </recent_temporary>
   </component>
