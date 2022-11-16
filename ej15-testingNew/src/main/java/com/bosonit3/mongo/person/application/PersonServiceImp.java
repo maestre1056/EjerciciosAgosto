@@ -1,6 +1,7 @@
 package com.bosonit3.mongo.person.application;
 
 import com.bosonit3.mongo.person.domain.Person;
+import com.bosonit3.mongo.person.exception.EntityNotFoundException;
 import com.bosonit3.mongo.person.exception.UnprocessableEntityException;
 
 import com.bosonit3.mongo.person.infraestructure.input.PersonInputDto;
@@ -41,7 +42,7 @@ public class PersonServiceImp implements PersonService{
     public PersonOutputDto findById(Long id) {
         Optional<Person> personOpt= personRepository.findById(id);
         if (personOpt.isEmpty()){
-            throw new RuntimeException("Person con id inexistente");
+            throw new EntityNotFoundException("Person con id inexistente",404,new Date());
         }
         PersonOutputDto personOutputDto = PersonMapper.Instance.personToPersonOutputDto(personOpt.get());
 
@@ -57,6 +58,8 @@ public class PersonServiceImp implements PersonService{
     public List<PersonOutputDto> findPeopleByUsername(String username) {
        List<Person> personList = personRepository.findByUsername(username);
        List<PersonOutputDto> p1 =new ArrayList<>();
+       if(personList.isEmpty())
+           throw new EntityNotFoundException("La persona con este usuario no existe",404,new Date());
        for(Person person:personList) {
            if(person.getUsername().equals(username)){
             PersonOutputDto personOutputDto=PersonMapper.Instance.personToPersonOutputDto(person);
