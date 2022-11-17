@@ -19,4 +19,13 @@ public class PersonaGetController {
         return personService.findPeopleByUsername(username);
     }
 
+    @GetMapping("{arg2}")
+    public String getParam(@PathVariable String arg2){
+        return String.format("Lammado getparam1",arg2);
+    }
+    @GetMapping("{arg1}")
+    public String getParam2(@PathVariable String arg1){
+        return String.format("Lammado getparam1",arg1);
+    }
+
 }

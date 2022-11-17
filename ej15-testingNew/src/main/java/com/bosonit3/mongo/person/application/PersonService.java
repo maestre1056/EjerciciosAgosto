@@ -12,13 +12,13 @@ public interface PersonService {
 
     PersonOutputDto findById(Long id);
 
-    Page<PersonOutputDto> getAll(Integer page);
+
 
     List<PersonOutputDto> findPeopleByUsername(String username);
 
     String deletePerson(Long id);
 
-    PersonOutputDto update(Long id);
+
 
     List<PersonOutputDto> findPeople();
 }

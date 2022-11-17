@@ -10,13 +10,23 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class PersonaGetController {
+public class PersonGetController {
     @Autowired
     PersonService personService;
 
     @GetMapping("/person/username/{username}")
     public List<PersonOutputDto> findByUsername(@PathVariable String username){
         return personService.findPeopleByUsername(username);
+    }
+
+    @GetMapping("/person/id/{id}")
+    public PersonOutputDto getById(@PathVariable Long id){
+        return personService.findById(id);
+    }
+
+    @GetMapping("/person")
+    public List<PersonOutputDto> getAll(){
+        return personService.findPeople();
     }
 
 }

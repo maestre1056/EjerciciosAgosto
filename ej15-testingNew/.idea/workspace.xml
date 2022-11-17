@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b3bc4fc-f501-48eb-ba6e-f0b95968eef6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/bosonit3/mongo/controller/PersonAddControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/bosonit3/mongo/controller/person/infraestructure/PersonAddControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/bosonit3/mongo/controller/person/infraestructure/PersonGetControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio09/ej7.1-crud-validation/src/main/java/com/example/ej7/crudvalidation/estudiante/infraestructure/controller/StudentGetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio09/ej7.1-crud-validation/src/main/java/com/example/ej7/crudvalidation/estudiante/infraestructure/controller/StudentGetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/main/java/com/bosonit3/mongo/person/infraestructure/controller/PersonaGetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/main/java/com/bosonit3/mongo/person/infraestructure/controller/PersonaGetController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bosonit3/mongo/person/application/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bosonit3/mongo/person/application/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bosonit3/mongo/person/application/PersonServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bosonit3/mongo/person/application/PersonServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bosonit3/mongo/person/infraestructure/controller/PersonaGetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bosonit3/mongo/person/infraestructure/controller/PersonGetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bosonit3/mongo/controller/PersonAddControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bosonit3/mongo/service/PersonServiceImpTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -61,86 +71,69 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Java/EjerciciosGitLab/ej15-testingNew&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Java/diffblue-cover-ij/lib/diffblue-cover-ij-2022.11.01.jar&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.PersonAddControllerTest.addPerson">
-    <configuration name="PersonAddControllerTest.addPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.bosonit3.mongo.controller" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.bosonit3.mongo.person.infraestructure.controller" />
+      <recent name="com.bosonit3.mongo.person.application" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PersonGetControllerTest.shouldGetByUsername">
+    <configuration name="PersonGetControllerTest.shouldGetAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ej15-testingNew" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bosonit3.mongo.controller.*" />
+          <option name="PATTERN" value="com.bosonit3.mongo.controller.person.infraestructure.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.bosonit3.mongo.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.bosonit3.mongo.controller.PersonAddControllerTest" />
-      <option name="METHOD_NAME" value="addPerson" />
+      <option name="PACKAGE_NAME" value="com.bosonit3.mongo.controller.person.infraestructure" />
+      <option name="MAIN_CLASS_NAME" value="com.bosonit3.mongo.controller.person.infraestructure.PersonGetControllerTest" />
+      <option name="METHOD_NAME" value="shouldGetAllUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonServiceImpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonGetControllerTest.shouldGetById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ej15-testingNew" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bosonit3.mongo.service.*" />
+          <option name="PATTERN" value="com.bosonit3.mongo.controller.person.infraestructure.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.bosonit3.mongo.service" />
-      <option name="MAIN_CLASS_NAME" value="com.bosonit3.mongo.service.PersonServiceImpTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonServiceImpTest.CanAddPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ej15-testingNew" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bosonit3.mongo.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bosonit3.mongo.service" />
-      <option name="MAIN_CLASS_NAME" value="com.bosonit3.mongo.service.PersonServiceImpTest" />
-      <option name="METHOD_NAME" value="CanAddPerson" />
+      <option name="PACKAGE_NAME" value="com.bosonit3.mongo.controller.person.infraestructure" />
+      <option name="MAIN_CLASS_NAME" value="com.bosonit3.mongo.controller.person.infraestructure.PersonGetControllerTest" />
+      <option name="METHOD_NAME" value="shouldGetById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonServiceImpTest.CanDeletePerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonGetControllerTest.shouldGetByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ej15-testingNew" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bosonit3.mongo.service.*" />
+          <option name="PATTERN" value="com.bosonit3.mongo.controller.person.infraestructure.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.bosonit3.mongo.service" />
-      <option name="MAIN_CLASS_NAME" value="com.bosonit3.mongo.service.PersonServiceImpTest" />
-      <option name="METHOD_NAME" value="CanDeletePerson" />
+      <option name="PACKAGE_NAME" value="com.bosonit3.mongo.controller.person.infraestructure" />
+      <option name="MAIN_CLASS_NAME" value="com.bosonit3.mongo.controller.person.infraestructure.PersonGetControllerTest" />
+      <option name="METHOD_NAME" value="shouldGetByUsername" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonaRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ej15-testingNew" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bosonit3.mongo.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bosonit3.mongo.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.bosonit3.mongo.repository.PersonaRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -197,23 +190,41 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="Write tests for method PersonDeleteController.delete" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="ej15-testingNew" />
+      <settings run-config-name="Write tests for method PersonDeleteController.delete" include-system-env-vars="true">
+        <jvm-args />
+        <selection-scope>method</selection-scope>
+        <selected-element key="com.bosonit3.mongo.person.infraestructure.controller.PersonDeleteController.delete:(Ljava/lang/Long;)Ljava/lang/String;" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for package controller" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="ej15-testingNew" />
+      <settings run-config-name="Write tests for package controller" include-system-env-vars="true">
+        <jvm-args />
+        <selection-scope>package</selection-scope>
+        <selected-element key="com.bosonit3.mongo.person.infraestructure.controller" />
+      </settings>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.Ruun" />
-      <item itemvalue="JUnit.PersonAddControllerTest.addPerson" />
-      <item itemvalue="JUnit.PersonServiceImpTest.CanAddPerson" />
-      <item itemvalue="JUnit.PersonServiceImpTest.CanDeletePerson" />
-      <item itemvalue="JUnit.PersonaRepositoryTest" />
-      <item itemvalue="JUnit.PersonServiceImpTest" />
+      <item itemvalue="Diffblue Cover.Write tests for method PersonDeleteController.delete" />
+      <item itemvalue="Diffblue Cover.Write tests for package controller" />
+      <item itemvalue="JUnit.PersonGetControllerTest.shouldGetById" />
+      <item itemvalue="JUnit.PersonGetControllerTest.shouldGetByUsername" />
+      <item itemvalue="JUnit.PersonGetControllerTest.shouldGetAllUsers" />
       <item itemvalue="Maven.13.2-mongo [spring-boot:build-image]" />
       <item itemvalue="Maven.Compilation" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PersonAddControllerTest.addPerson" />
-        <item itemvalue="JUnit.PersonServiceImpTest.CanDeletePerson" />
-        <item itemvalue="JUnit.PersonServiceImpTest.CanAddPerson" />
-        <item itemvalue="JUnit.PersonServiceImpTest" />
-        <item itemvalue="JUnit.PersonaRepositoryTest" />
+        <item itemvalue="JUnit.PersonGetControllerTest.shouldGetByUsername" />
+        <item itemvalue="JUnit.PersonGetControllerTest.shouldGetById" />
+        <item itemvalue="Diffblue Cover.Write tests for package controller" />
+        <item itemvalue="Diffblue Cover.Write tests for method PersonDeleteController.delete" />
+        <item itemvalue="JUnit.PersonGetControllerTest.shouldGetAllUsers" />
       </list>
     </recent_temporary>
   </component>
@@ -243,11 +254,22 @@
     <SUITE FILE_PATH="coverage/ej15_testingNew$PersonServiceTest.ic" NAME="PersonServiceTest Coverage Results" MODIFIED="1668623308772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.bosonit3.mongo.service.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/ej15_testingNew$PersonServiceImpTest.ic" NAME="PersonServiceImpTest Coverage Results" MODIFIED="1668669999919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.bosonit3.mongo.service.*</FILTER>
+    <SUITE FILE_PATH="coverage/ej15_testingNew$All_in_ej15_testingNew.ic" NAME="All in ej15-testingNew Coverage Results" MODIFIED="1668705240508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ej15_testingNew$PersonAddControllerTest.ic" NAME="PersonAddControllerTest Coverage Results" MODIFIED="1668691613273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.bosonit3.mongo.person.infraestructure.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ej15_testingNew$All_in_ej15_testingNew__2_.ic" NAME="All in ej15-testingNew (2) Coverage Results" MODIFIED="1668707681974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ej15_testingNew$PersonAddControllerTest_addPerson.ic" NAME="PersonAddControllerTest.addPerson Coverage Results" MODIFIED="1668688493722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.bosonit3.mongo.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ej15_testingNew$PersonServiceImpTest.ic" NAME="PersonServiceImpTest Coverage Results" MODIFIED="1668691360434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.bosonit3.mongo.person.application.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/ej15_testingNew$PersonServiceTest_CanGetAllPeopleByUsername.ic" NAME="PersonServiceTest.CanGetAllPeopleByUsername Coverage Results" MODIFIED="1668623286575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.bosonit3.mongo.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ej15_testingNew$PersonServiceImpTest_viewId.ic" NAME="PersonServiceImpTest.viewId Coverage Results" MODIFIED="1668691113939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.bosonit3.mongo.person.application.*</FILTER>
     </SUITE>
   </component>
 </project>

@@ -6,9 +6,7 @@ import com.example.ej7.crudvalidation.exception.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -33,5 +31,14 @@ public class StudentGetController {
         }
         return responseEntity;
 
+    }
+    @GetMapping("{arg2}")
+    public String getParam(@PathVariable String arg2){
+        return String.format("Lammado getparam2",arg2);
+    }
+    @ResponseStatus(code = HttpStatus.ACCEPTED)
+    @PostMapping("{arg1}")
+    public String getParam2(@PathVariable String arg1){
+        return String.format("Lammado getparam1",arg1);
     }
 }

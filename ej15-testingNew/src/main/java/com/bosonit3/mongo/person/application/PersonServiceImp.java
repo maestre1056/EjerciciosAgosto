@@ -49,10 +49,7 @@ public class PersonServiceImp implements PersonService{
         return personOutputDto;
     }
 
-    @Override
-    public Page<PersonOutputDto> getAll(Integer page) {
-        return null;
-    }
+
 
     @Override
     public List<PersonOutputDto> findPeopleByUsername(String username) {
@@ -80,10 +77,7 @@ public class PersonServiceImp implements PersonService{
         return "Persona borrada";
     }
 
-    @Override
-    public PersonOutputDto update(Long id) {
-        return null;
-    }
+
 
     @Override
     public List<PersonOutputDto> findPeople() {

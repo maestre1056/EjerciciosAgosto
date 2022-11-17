@@ -1,4 +1,4 @@
-package com.bosonit3.mongo.service;
+package com.bosonit3.mongo.controller.person.application;
 
 import com.bosonit3.mongo.person.application.PersonService;
 import com.bosonit3.mongo.person.application.PersonServiceImp;
@@ -22,8 +22,7 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.isNull;
 import static org.mockito.BDDMockito.given;
@@ -31,7 +30,10 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-public class PersonServiceImpTest {
+class PersonServiceImpTest {
+
+
+
     @Autowired
     private Mock mockMvc;
     @Mock
@@ -49,8 +51,10 @@ public class PersonServiceImpTest {
         personInputDto = new PersonInputDto(id,"maestransa","456","Antonio",
                 "Maestre","antonio@gmail.com","antonio@gmail.com",
                 "Cordoba",false,date);
-       person = PersonMapper.Instance.personInputDtoToPerson(personInputDto);
+        person = PersonMapper.Instance.personInputDtoToPerson(personInputDto);
     }
+
+
 
     @Test
     void viewId() throws Exception {
