@@ -3,6 +3,7 @@ package com.bosonit3.mongo.controller.person.infraestructure;
 import com.bosonit3.mongo.person.application.PersonServiceImp;
 import com.bosonit3.mongo.person.domain.Person;
 import com.bosonit3.mongo.person.infraestructure.controller.PersonAddController;
+import com.bosonit3.mongo.person.infraestructure.controller.PersonDeleteController;
 import com.bosonit3.mongo.person.infraestructure.controller.PersonGetController;
 import com.bosonit3.mongo.person.infraestructure.input.PersonInputDto;
 import com.bosonit3.mongo.person.infraestructure.mapper.PersonMapper;
@@ -40,9 +41,10 @@ import org.hamcrest.Matchers;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
+
 @ExtendWith(SpringExtension.class)
-@WebMvcTest(PersonGetController.class)
-public class PersonGetControllerTest {
+@WebMvcTest(PersonDeleteController.class)
+public class PersonDeleteControllerTest {
 
     @Autowired
     private MockMvc mvc;
@@ -59,11 +61,11 @@ public class PersonGetControllerTest {
     @InjectMocks
     private PersonGetController underTest;
 
-    private PersonInputDto personInputDto;
-    private List<PersonOutputDto> personOutputList;
-    private PersonOutputDto personOutputDto;
-    private Date date = new Date();
-    private Person person;
+     PersonInputDto personInputDto;
+     List<PersonOutputDto> personOutputList;
+     PersonOutputDto personOutputDto;
+     Date date = new Date();
+     Person person;
 
 
     @BeforeEach
@@ -81,37 +83,9 @@ public class PersonGetControllerTest {
     }
 
     @Test
-   public void shouldGetByUsername() throws Exception {
-        when(personServiceImp.findPeopleByUsername("maestransa")).thenReturn(personOutputList);
-
-
-        mvc.perform(get("/person/username/{username}", "maestransa")
+    void shouldDeletePerson()throws Exception{
+        mvc.perform(delete("/person/{id}", "1")
                         .contentType("application/json"))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$", hasSize(1)));
-
-    }
-
-    @Test
-    void shouldGetById()throws Exception{
-        personRepository.save(person);
-        when(personServiceImp.findById(person.getId())).thenReturn(personOutputDto);
-//          when
-        ResultActions resultActions=mvc.perform(get("/person/id/1"));
-//          then
-        resultActions.andExpect(status().isOk())
-                .andDo(print());
-    }
-
-    @Test
-    void shouldGetALl()throws Exception{
-        when(personServiceImp.findPeople()).thenReturn(personOutputList);
-
-
-        mvc.perform(get("/person")
-                        .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$", hasSize(1)));
-
+                .andExpect(status().isOk());
     }
 }
