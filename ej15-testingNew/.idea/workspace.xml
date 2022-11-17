@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b3bc4fc-f501-48eb-ba6e-f0b95968eef6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bosonit3/mongo/person/infraestructure/controller/PersonDeleteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/lineas/infraestructure/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ej-chuchi.3-crud/src/main/java/com/bosonit/ejchuchi/crud/lineas/infraestructure/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/bosonit3/mongo/controller/PersonAddControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bosonit3/mongo/person/application/PersonServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bosonit3/mongo/person/application/PersonServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/bosonit3/mongo/service/PersonServiceImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bosonit3/mongo/service/PersonServiceImpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +65,23 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.PersonServiceImpTest.CanDeletePerson">
+  <component name="RunManager" selected="JUnit.PersonAddControllerTest.addPerson">
+    <configuration name="PersonAddControllerTest.addPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ej15-testingNew" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bosonit3.mongo.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bosonit3.mongo.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.bosonit3.mongo.controller.PersonAddControllerTest" />
+      <option name="METHOD_NAME" value="addPerson" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PersonServiceImpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ej15-testingNew" />
       <extension name="coverage">
@@ -112,22 +125,6 @@
       <option name="PACKAGE_NAME" value="com.bosonit3.mongo.service" />
       <option name="MAIN_CLASS_NAME" value="com.bosonit3.mongo.service.PersonServiceImpTest" />
       <option name="METHOD_NAME" value="CanDeletePerson" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonServiceImpTest.CanGetPeople" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ej15-testingNew" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bosonit3.mongo.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bosonit3.mongo.service" />
-      <option name="MAIN_CLASS_NAME" value="com.bosonit3.mongo.service.PersonServiceImpTest" />
-      <option name="METHOD_NAME" value="CanGetPeople" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -202,21 +199,21 @@
     </configuration>
     <list>
       <item itemvalue="Application.Ruun" />
+      <item itemvalue="JUnit.PersonAddControllerTest.addPerson" />
       <item itemvalue="JUnit.PersonServiceImpTest.CanAddPerson" />
       <item itemvalue="JUnit.PersonServiceImpTest.CanDeletePerson" />
       <item itemvalue="JUnit.PersonaRepositoryTest" />
       <item itemvalue="JUnit.PersonServiceImpTest" />
-      <item itemvalue="JUnit.PersonServiceImpTest.CanGetPeople" />
       <item itemvalue="Maven.13.2-mongo [spring-boot:build-image]" />
       <item itemvalue="Maven.Compilation" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PersonAddControllerTest.addPerson" />
         <item itemvalue="JUnit.PersonServiceImpTest.CanDeletePerson" />
         <item itemvalue="JUnit.PersonServiceImpTest.CanAddPerson" />
         <item itemvalue="JUnit.PersonServiceImpTest" />
         <item itemvalue="JUnit.PersonaRepositoryTest" />
-        <item itemvalue="JUnit.PersonServiceImpTest.CanGetPeople" />
       </list>
     </recent_temporary>
   </component>
