@@ -109,4 +109,26 @@ public class PersonServiceImpTest {
         assertThat(personOutputList).isExactlyInstanceOf(ArrayList.class);
 
     }
+
+    @Test
+    void CanAddPerson()throws Exception{
+        personOutputDto = underTest.addPerson(personInputDto);
+        //then
+        assertThat(personOutputDto).isNotNull();
+        assertThat(personOutputDto.getId()).isGreaterThan(0);
+    }
+
+    @Test
+    void CanDeletePerson(){
+        //given
+        personRepository.save(person);
+        when(personRepository.findById(person.getId())).thenReturn(Optional.of(person));
+
+        //when
+        underTest.deletePerson(person.getId());
+
+        //then
+        verify(personRepository).delete(person);
+        assertThat(person).isNotIn(personRepository);
+    }
 }

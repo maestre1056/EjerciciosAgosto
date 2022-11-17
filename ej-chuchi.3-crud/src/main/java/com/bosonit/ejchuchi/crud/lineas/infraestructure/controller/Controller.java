@@ -16,7 +16,7 @@ public class Controller {
     @Autowired
     ServiceCabeceraImp serviceCabeceraImp;
 
-    @GetMapping("/factura/")
+    @GetMapping("/factura")
     public  List<Cabecera> findAll(){
         return serviceCabeceraImp.getAll();
     }

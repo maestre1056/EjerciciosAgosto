@@ -72,7 +72,12 @@ public class PersonServiceImp implements PersonService{
 
     @Override
     public String deletePerson(Long id) {
-        return null;
+        Optional<Person> personOpt= personRepository.findById(id);
+        if (personOpt.isEmpty())
+            throw new EntityNotFoundException("Person not found",404,new Date());
+
+        personRepository.delete(personOpt.get());
+        return "Persona borrada";
     }
 
     @Override
