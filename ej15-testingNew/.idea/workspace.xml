@@ -5,9 +5,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b3bc4fc-f501-48eb-ba6e-f0b95968eef6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/bosonit3/mongo/controller/person/infraestructure/PersonDeleteControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/main/java/com/bosonit3/mongo/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/main/java/com/bosonit3/mongo/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/main/java/com/bosonit3/mongo/docker-compose.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/main/java/com/bosonit3/mongo/person/application/PersonService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/main/java/com/bosonit3/mongo/person/application/PersonServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/main/java/com/bosonit3/mongo/person/domain/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/main/java/com/bosonit3/mongo/person/exception/ApiExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/main/java/com/bosonit3/mongo/person/exception/CustomeError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/main/java/com/bosonit3/mongo/person/exception/EntityNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/main/java/com/bosonit3/mongo/person/exception/UnprocessableEntityException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/main/java/com/bosonit3/mongo/person/infraestructure/controller/PersonAddController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/main/java/com/bosonit3/mongo/person/infraestructure/controller/PersonaGetController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/main/java/com/bosonit3/mongo/person/infraestructure/input/PersonInputDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/main/java/com/bosonit3/mongo/person/infraestructure/mapper/PersonMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/main/java/com/bosonit3/mongo/person/infraestructure/output/PersonOutputDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/main/java/com/bosonit3/mongo/person/infraestructure/repository/PersonRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/test/java/com/bosonit3/mongo/ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio14-mongo/13.2-mongo/src/test/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/Docker-compose.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/main/java/com/bosonit/ejercicio15/testing/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/main/java/com/bosonit/ejercicio15/testing/person/application/PersonService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/main/java/com/bosonit/ejercicio15/testing/person/application/PersonServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/main/java/com/bosonit/ejercicio15/testing/person/domain/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/main/java/com/bosonit/ejercicio15/testing/person/exception/ApiExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/main/java/com/bosonit/ejercicio15/testing/person/exception/CustomeError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/main/java/com/bosonit/ejercicio15/testing/person/exception/EntityNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/main/java/com/bosonit/ejercicio15/testing/person/exception/UnprocessableEntityException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/main/java/com/bosonit/ejercicio15/testing/person/infraestructure/controller/PersonAddController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/main/java/com/bosonit/ejercicio15/testing/person/infraestructure/controller/PersonDeleteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/main/java/com/bosonit/ejercicio15/testing/person/infraestructure/controller/PersonGetControlller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/main/java/com/bosonit/ejercicio15/testing/person/infraestructure/controller/PersonUpdateController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/main/java/com/bosonit/ejercicio15/testing/person/infraestructure/controller/input/PersonInputDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/main/java/com/bosonit/ejercicio15/testing/person/infraestructure/controller/mapper/PersonMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/main/java/com/bosonit/ejercicio15/testing/person/infraestructure/controller/output/PersonOutputDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/main/java/com/bosonit/ejercicio15/testing/person/infraestructure/controller/output/PersonOutputNew.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/main/java/com/bosonit/ejercicio15/testing/person/infraestructure/repository/PersonRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/test/java/com/bosonit/ejercicio15/testing/ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/test/java/com/bosonit/ejercicio15/testing/person/application/PersonServiceImpTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/test/java/com/bosonit/ejercicio15/testing/person/infraestructure/repository/PersonRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio15-testing/src/test/resources/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/bosonit3/mongo/controller/person/infraestructure/PersonGetControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bosonit3/mongo/controller/person/infraestructure/PersonGetControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,16 +111,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Java/diffblue-cover-ij/lib/diffblue-cover-ij-2022.11.01.jar&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Java/EjerciciosGitLab/Ej15.2-SpringSecurity",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.bosonit3.mongo.controller" />
@@ -240,7 +292,7 @@
     <SUITE FILE_PATH="coverage/ej15_testingNew$PersonAddControllerTest.ic" NAME="PersonAddControllerTest Coverage Results" MODIFIED="1668691613273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.bosonit3.mongo.person.infraestructure.controller.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/ej15_testingNew$All_in_ej15_testingNew__2_.ic" NAME="All in ej15-testingNew (2) Coverage Results" MODIFIED="1668707681974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ej15_testingNew$All_in_ej15_testingNew__2_.ic" NAME="All in ej15-testingNew (2) Coverage Results" MODIFIED="1668715068029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ej15_testingNew$PersonAddControllerTest_addPerson.ic" NAME="PersonAddControllerTest.addPerson Coverage Results" MODIFIED="1668688493722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.bosonit3.mongo.controller.*</FILTER>
     </SUITE>
