@@ -3,7 +3,6 @@ package com.example.ej7.crudvalidation.persona.infraestructure.controller;
 import com.example.ej7.crudvalidation.exception.EntityNotFoundException;
 import com.example.ej7.crudvalidation.persona.application.PersonaService;
 import com.example.ej7.crudvalidation.persona.domain.PersonaPage;
-import com.example.ej7.crudvalidation.persona.domain.PersonaSearchCriteria;
 import com.example.ej7.crudvalidation.persona.infraestructure.controller.output.PersonaOutputDto;
 import com.example.ej7.crudvalidation.persona.infraestructure.controller.output.PersonaOutputDtoNew;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,16 +1,19 @@
 package com.example.ej7.crudvalidation.persona.domain;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import com.example.ej7.crudvalidation.role.domain.Role;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 @Getter
 @Setter
 @Entity
 @Table(name="Persona")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Persona implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -46,6 +49,9 @@ public class Persona implements Serializable {
 
     @Column
     private Date terminationDate;
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    private Collection<Role> roles = new ArrayList<>();
 
 
 
