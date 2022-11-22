@@ -5,11 +5,15 @@ import lombok.Data;
 
 @Data
 public class RoleInputDto {
-    private String name;
+    private String roleName;
 
     public Role transformToRole(){
        Role role = new Role();
-       role.setName(this.name);
+       role.setRoleName(this.roleName);
        return role;
+    }
+
+    public RoleInputDto(String roleName) {
+        this.roleName = roleName;
     }
 }

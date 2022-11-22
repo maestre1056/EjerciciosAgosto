@@ -6,10 +6,10 @@ import lombok.Data;
 @Data
 public class RoleOutputDto {
     private Long id_Role;
-    private String name;
+    private String roleName;
 
-    RoleOutputDto(Role role){
+    public RoleOutputDto(Role role){
         this.id_Role=role.getId_Role();
-        this.name = role.getName();
+        this.roleName = role.getRoleName();
     }
 }

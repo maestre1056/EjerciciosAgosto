@@ -51,7 +51,7 @@ public class Persona implements Serializable {
     private Date terminationDate;
 
     @ManyToMany(fetch = FetchType.EAGER)
-    private Collection<Role> roles = new ArrayList<>();
+    private Collection<Role> roles ;
 
 
 

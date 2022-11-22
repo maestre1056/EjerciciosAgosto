@@ -9,19 +9,33 @@ import com.example.ej7.crudvalidation.persona.infraestructure.controller.mapper.
 import com.example.ej7.crudvalidation.persona.infraestructure.controller.output.PersonaOutputDto;
 import com.example.ej7.crudvalidation.persona.infraestructure.repository.PersonaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @Service
-public class PersonaServiceImp implements PersonaService {
+public class PersonaServiceImp implements PersonaService, UserDetailsService {
 
     @Autowired
     PersonaRepository personaRepository;
 
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        Persona persona = personaRepository.findByUsername(username);
+        if(persona==null)
+            throw new UsernameNotFoundException("No person named "+username+ " was found.");
+        Collection<SimpleGrantedAuthority> authorities  = new ArrayList<>();
+        persona.getRoles().forEach(role -> {
+            authorities.add(new SimpleGrantedAuthority(role.getRoleName()));
+        });
+        return new org.springframework.security.core.userdetails.User(persona.getUsername(), persona.getPassword(),
+                authorities);
+    }
 
 
     @Override
@@ -127,7 +141,6 @@ public class PersonaServiceImp implements PersonaService {
     public Optional<Persona> getPersonaOptional(Long idPersona) {
         return personaRepository.findById(idPersona);
     }
-
 
 
 

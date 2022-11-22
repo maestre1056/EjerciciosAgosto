@@ -12,7 +12,9 @@ public interface PersonaMapper {
     PersonaMapper Instance = Mappers.getMapper(PersonaMapper.class);
 
     PersonaOutputDto personaToPersonaOutputDto(Persona persona);
+
     Persona personaInputDtoToPersona(PersonaInputDto personaInputDto);
 
-    PersonaOutputDto personaSearchCriteriaToOutputDto(PersonaSearchCriteria personaSearchCriteria);
 }
+
+

@@ -1,8 +1,10 @@
 package com.example.ej7.crudvalidation.persona.infraestructure.controller.output;
 
 import com.example.ej7.crudvalidation.persona.domain.Persona;
+import com.example.ej7.crudvalidation.role.domain.Role;
 import lombok.Data;
 
+import java.util.Collection;
 import java.util.Date;
 import java.util.function.Function;
 
@@ -17,6 +19,7 @@ public class PersonaOutputDto  {
     private Date createdDate;
     private String imagenUrl;
     private Date terminateDate;
+    private Collection<Role> roles;
 
 
 
