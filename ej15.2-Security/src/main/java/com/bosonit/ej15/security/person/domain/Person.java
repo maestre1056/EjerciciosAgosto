@@ -6,6 +6,7 @@ import com.bosonit.ej15.security.role.infraestructure.dto.RoleDTO;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Table;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -46,4 +47,9 @@ public class Person {
         setRoles(personDTO.getRoles());
     }
 
+/*
+    public static void main(String[] args) {
+        System.out.println(new BCryptPasswordEncoder().encode("1234"));
+    }
+*/
 }

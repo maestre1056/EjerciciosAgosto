@@ -8,6 +8,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.util.ArrayList;
 
@@ -21,14 +22,18 @@ public class Application {
 	CommandLineRunner run(PersonService personService, RoleService roleService) {
 		return args -> {
 
-			personService.addPerson(new PersonDTO(null, "maestransa", "1234", "Antonio", "Maestre", 28, new ArrayList<>()));
-			personService.addPerson(new PersonDTO(null, "supersali", "manteqilla", "Fernando", "Hernandez", 29, new ArrayList<>()));
+			personService.addPerson(new PersonDTO(null, "maestransa", "$2a$10$LkdatT9LQVt9yytr/i6uduwFpDXi2cXmQd8sY43XHOybyb59Olqu6",
+					"Antonio", "Maestre", 28, new ArrayList<>()));
+			//personService.addPerson(new PersonDTO(null, "supersali", "manteqilla", "Fernando", "Hernandez", 29, new ArrayList<>()));
 
 			roleService.addRole(new RoleDTO(null, "ADMIN"));
 			roleService.addRole(new RoleDTO(null, "USER"));
 
 			roleService.addRoleToPerson("maestransa", "ADMIN");
-			roleService.addRoleToPerson("supersali", "USER");
+			//roleService.addRoleToPerson("supersali", "USER");
+
 		};
 	}
+
+
 }

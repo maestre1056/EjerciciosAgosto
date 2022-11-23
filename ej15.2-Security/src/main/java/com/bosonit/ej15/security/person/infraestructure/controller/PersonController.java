@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/person")
@@ -35,7 +36,7 @@ public class PersonController {
     }
 
     @GetMapping("/username/{username}")
-    public Person getPersonByUsername(@PathVariable("username") String username) {
+    public Optional<Person> getPersonByUsername(@PathVariable("username") String username) throws Exception {
         return personService.getPersonByUsername(username);
     }
 

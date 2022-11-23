@@ -12,6 +12,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Optional;
+
 @Service
 @Transactional
 @Slf4j
@@ -30,7 +32,8 @@ public class RoleServiceImp implements RoleService{
 
     @Override
     public void addRoleToPerson(String username, String roleName) {
-        Person person = personRepository.findByUsername(username);
+       Optional<Person>  personOpt = personRepository.findByUsername(username);
+       Person person=personOpt.get();
         Role role = roleRepository.findByRoleName(roleName);
         Collection<Role> roles = person.getRoles();
         if (!roles.contains(role)) {
