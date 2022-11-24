@@ -1,4 +1,4 @@
-/*
+
 package com.bosonit.ej15.security.security;
 
 import com.bosonit.ej15.security.person.application.PersonService;
@@ -26,4 +26,4 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 }
 
 
- */
+

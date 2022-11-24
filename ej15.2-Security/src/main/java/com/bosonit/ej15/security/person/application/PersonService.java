@@ -16,5 +16,5 @@ public interface PersonService {
     Person updatePerson(Long idPerson, PersonDTO personDTO);
     void deletePerson(Long idPerson);
 
-    UserDetails loadUserByUsername(String username) throws UsernameNotFoundException;
+   // UserDetails loadUserByUsername(String username) throws UsernameNotFoundException;
 }

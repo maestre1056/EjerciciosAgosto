@@ -20,7 +20,7 @@ import java.util.Optional;
 @Component
 @Transactional
 @Slf4j
-public class PersonServiceImp implements PersonService, UserDetailsService {
+public class PersonServiceImp implements PersonService {
    @Autowired
    PersonRepository personRepository;
 
@@ -81,11 +81,13 @@ public class PersonServiceImp implements PersonService, UserDetailsService {
         personRepository.deleteById(idPerson);
     }
 
-    @Override
+   /* @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Person person = personRepository
                 .findByUsername(username)
                 .orElseThrow(()->new UsernameNotFoundException("El usuario con username "+username+" no existe"));
         return new UserDetailsImpl(person);
     }
+
+    */
 }
