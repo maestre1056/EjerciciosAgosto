@@ -1,5 +1,6 @@
-package com.bosonit.ej15.security.security;
+package com.bosonit.ej15.security.security.filter;
 
+import com.bosonit.ej15.security.security.TokenUtils;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;

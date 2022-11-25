@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -18,7 +19,7 @@ public class PersonDTO {
     private String name;
     private String surname;
     private Integer age;
-    private Collection<Role> roles = new ArrayList<>();
+    private List<Role> roles = new ArrayList<>();
 
     public PersonDTO(Person person) {
         setIdPerson(person.getIdPerson());
@@ -30,7 +31,7 @@ public class PersonDTO {
         setRoles(person.getRoles());
     }
 
-    public PersonDTO(Long idPerson, String username, String password, String name, String surname, Integer age, Collection<Role> roles) {
+    public PersonDTO(Long idPerson, String username, String password, String name, String surname, Integer age, List<Role> roles) {
         setIdPerson(idPerson);
         setUsername(username);
         setPassword(password);

@@ -1,8 +1,11 @@
-package com.bosonit.ej15.security.security;
+package com.bosonit.ej15.security.security.config;
 
+import com.bosonit.ej15.security.security.filter.JWTAuthenticationFilter;
+import com.bosonit.ej15.security.security.filter.JWTAuthorizationFilter;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -32,11 +35,17 @@ public class SecurityConfig {
         return http
                 .csrf().disable()
                 .authorizeRequests()
+                .antMatchers(HttpMethod.POST)
+                .hasAnyAuthority("ROLE_ADMIN")
+                .antMatchers(HttpMethod.DELETE)
+                .hasAnyAuthority("ROLE_ADMIN")
+                .antMatchers(HttpMethod.GET)
+                .hasAnyAuthority("ROLE_ADMIN")
                 .anyRequest()
                 .authenticated()
                 .and()
-                .httpBasic()
-                .and()
+                //.httpBasic()
+                //.and()
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()

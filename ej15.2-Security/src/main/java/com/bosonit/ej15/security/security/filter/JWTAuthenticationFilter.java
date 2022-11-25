@@ -1,5 +1,8 @@
-package com.bosonit.ej15.security.security;
+package com.bosonit.ej15.security.security.filter;
 
+import com.bosonit.ej15.security.security.AuthCredentials;
+import com.bosonit.ej15.security.security.TokenUtils;
+import com.bosonit.ej15.security.security.UserDetailsImpl;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -27,7 +30,7 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
         UsernamePasswordAuthenticationToken usernamePAT= new UsernamePasswordAuthenticationToken(
                 authCredentials.getUsername(),
                 authCredentials.getPassword(),
-                Collections.emptyList()
+                authCredentials.getRoles()
         );
 
 
@@ -39,7 +42,7 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                                             Authentication authResult) throws IOException, ServletException {
 
         UserDetailsImpl userDetails = (UserDetailsImpl) authResult.getPrincipal();
-        String token = TokenUtils.createToken(userDetails.getUsername(),userDetails.getName());
+        String token = TokenUtils.createToken(userDetails.getUsername(),authResult);
         response.addHeader("Authorization","Bearer "+ token);
         response.getWriter().flush();
 

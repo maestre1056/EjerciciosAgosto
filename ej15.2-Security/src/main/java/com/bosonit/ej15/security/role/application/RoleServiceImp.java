@@ -35,7 +35,7 @@ public class RoleServiceImp implements RoleService{
        Optional<Person>  personOpt = personRepository.findByUsername(username);
        Person person=personOpt.get();
         Role role = roleRepository.findByRoleName(roleName);
-        Collection<Role> roles = person.getRoles();
+        List<Role> roles = person.getRoles();
         if (!roles.contains(role)) {
             person.getRoles().add(role);
             personRepository.save(person);
