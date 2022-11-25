@@ -22,6 +22,7 @@ public class Person {
     @Column(name = "id_person", nullable = false)
     private Long idPerson;
 
+    @Column(unique = true)
     private String username;
     private String password;
     private String name;

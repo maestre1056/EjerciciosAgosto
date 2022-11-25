@@ -1,5 +1,6 @@
 package com.bosonit.ej15.security.role.infraestructure.controller;
 
+import com.bosonit.ej15.security.person.domain.Person;
 import com.bosonit.ej15.security.role.application.RoleService;
 import com.bosonit.ej15.security.role.domain.Role;
 import com.bosonit.ej15.security.role.infraestructure.dto.RoleDTO;
@@ -21,9 +22,9 @@ public class RoleController {
         return roleService.addRole(roleDTO);
     }
 
-    @PostMapping(value = "/addroletouser", consumes = { "multipart/form-data" })
-    public void addRoleToUser(@ModelAttribute RoleToUserForm form) {
-        roleService.addRoleToPerson(form.getUsername(), form.getRole());
+    @PostMapping(value = "/addroletouser")
+    public Person addRoleToUser(@RequestParam String username, @RequestParam String roleName) {
+      return   roleService.addRoleToPerson(username, roleName);
     }
 
     @GetMapping
@@ -41,9 +42,5 @@ public class RoleController {
         }
     }
 
-    @Data
-    static class RoleToUserForm {
-        private String username;
-        private String role;
-    }
+
 }

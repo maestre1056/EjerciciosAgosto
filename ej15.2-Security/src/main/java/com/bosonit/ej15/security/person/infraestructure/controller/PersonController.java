@@ -5,6 +5,8 @@ import com.bosonit.ej15.security.person.domain.Person;
 import com.bosonit.ej15.security.person.infraestructure.dto.PersonDTO;
 import com.bosonit.ej15.security.person.infraestructure.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -21,8 +23,12 @@ public class PersonController {
     private PersonRepository personRepository;
 
     @PostMapping
-    public Person addPerson(@RequestBody PersonDTO personDTO) {
-        return personService.addPerson(personDTO);
+    public Object addPerson(@RequestBody PersonDTO personDTO) {
+        try{
+            return personService.addPerson(personDTO);
+        }catch (DataIntegrityViolationException e) {
+            return ResponseEntity.badRequest().body("Username already existed");
+        }
     }
 
     @GetMapping("/all")

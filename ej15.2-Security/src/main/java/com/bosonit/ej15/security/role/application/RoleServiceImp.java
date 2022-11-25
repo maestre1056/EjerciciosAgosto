@@ -31,7 +31,7 @@ public class RoleServiceImp implements RoleService{
     }
 
     @Override
-    public void addRoleToPerson(String username, String roleName) {
+    public Person addRoleToPerson(String username, String roleName) {
        Optional<Person>  personOpt = personRepository.findByUsername(username);
        Person person=personOpt.get();
         Role role = roleRepository.findByRoleName(roleName);
@@ -40,6 +40,7 @@ public class RoleServiceImp implements RoleService{
             person.getRoles().add(role);
             personRepository.save(person);
         }
+        return person;
     }
 
     @Override

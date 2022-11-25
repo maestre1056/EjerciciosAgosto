@@ -1,0 +1,364 @@
+{
+	"info": {
+		"_postman_id": "60cc5ed5-8154-4be8-b788-6122ed169b7c",
+		"name": "15.2-Security",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22851801"
+	},
+	"item": [
+		{
+			"name": "person",
+			"item": [
+				{
+					"name": "admin",
+					"item": [
+						{
+							"name": "addPerson",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWVzdHJhbnNhIiwiZXhwIjoxNjcxOTU3NDg5LCIgYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOIn0.7J_GmM9cTLy5opTxTpXzfzODNuVU2AMkCpcl3TySRuA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idPerson\":null,\r\n    \"username\":\"Lou\",\r\n    \"password\":\"cabesa\",\r\n    \"name\":\"Lourditas\",\r\n    \"surname\":\"Rios\",\r\n    \"age\":45\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/person/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"person",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletePerson",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWVzdHJhbnNhIiwiZXhwIjoxNjcxOTU3OTc5LCIgYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOIn0.pkejvan_8XrHiJDL7eRz65k35MpVeVmpvzMTocuoFCI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/person/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"person",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updatePerson",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWVzdHJhbnNhIiwiZXhwIjoxNjcxOTU3OTc5LCIgYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOIn0.pkejvan_8XrHiJDL7eRz65k35MpVeVmpvzMTocuoFCI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \r\n    \"username\":\"Lou\",\r\n    \"password\":\"cabesa\",\r\n    \"name\":\"Lourditas\",\r\n    \"surname\":\"de los Rios\",\r\n    \"age\":45\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/person/5",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"person",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addRoleToUser",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWVzdHJhbnNhIiwiZXhwIjoxNjcxOTY3MjgyLCIgYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOIn0.uNRCpFLUXgXgkVRe04wCQMBVfIhMgEh2Qnbj2Y6ADuc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "supersali",
+											"value": "ROLE_GUEST",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8080/role/addroletouser?username=supersali&roleName=ROLE_GUEST",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"role",
+										"addroletouser"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "supersali"
+										},
+										{
+											"key": "roleName",
+											"value": "ROLE_GUEST"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "getAll",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWVzdHJhbnNhIiwiZXhwIjoxNjcxODAxNzE4LCJub21icmUiOiJBbnRvbmlvIn0.6bABp3s67nExG_-xMk-9bncRBTLa-XErFsXT47-MO8M",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/person/all",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"person",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWVzdHJhbnNhIiwiZXhwIjoxNjcxODAxNzE4LCJub21icmUiOiJBbnRvbmlvIn0.6bABp3s67nExG_-xMk-9bncRBTLa-XErFsXT47-MO8M",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/person/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"person",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getByUsername",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "role",
+			"item": [
+				{
+					"name": "admin",
+					"item": [
+						{
+							"name": "addRole",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWVzdHJhbnNhIiwiZXhwIjoxNjcxOTU3NDg5LCIgYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOIn0.7J_GmM9cTLy5opTxTpXzfzODNuVU2AMkCpcl3TySRuA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idPerson\":null,\r\n    \"username\":\"Lou\",\r\n    \"password\":\"cabesa\",\r\n    \"name\":\"Lourditas\",\r\n    \"surname\":\"Rios\",\r\n    \"age\":45\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/person/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"person",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletePerson",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWVzdHJhbnNhIiwiZXhwIjoxNjcxOTU3OTc5LCIgYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOIn0.pkejvan_8XrHiJDL7eRz65k35MpVeVmpvzMTocuoFCI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/person/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"person",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "root",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "root",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"maestransa\",\r\n    \"password\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

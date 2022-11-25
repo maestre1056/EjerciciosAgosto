@@ -14,6 +14,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.EntityNotFoundException;
 import java.util.List;
 import java.util.Optional;
 
@@ -27,8 +28,10 @@ public class PersonServiceImp implements PersonService {
 
     @Override
     public Person addPerson(PersonDTO personDTO) {
+
         personDTO.setPassword(new BCryptPasswordEncoder().encode(personDTO.getPassword()));
         return personRepository.save(new Person(personDTO));
+
     }
 
     @Override

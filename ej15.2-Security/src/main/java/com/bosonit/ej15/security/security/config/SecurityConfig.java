@@ -39,7 +39,7 @@ public class SecurityConfig {
                 .hasAnyAuthority("ROLE_ADMIN")
                 .antMatchers(HttpMethod.DELETE)
                 .hasAnyAuthority("ROLE_ADMIN")
-                .antMatchers(HttpMethod.GET)
+                .antMatchers(HttpMethod.PUT)
                 .hasAnyAuthority("ROLE_ADMIN")
                 .anyRequest()
                 .authenticated()
