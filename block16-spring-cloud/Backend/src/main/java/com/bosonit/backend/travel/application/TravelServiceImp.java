@@ -75,6 +75,8 @@ public class TravelServiceImp implements TravelService{
             throw new Exception("The passenger is already in travel");
         if(travel.getPassenger().size()>40)
             throw new Exception("There are too many people in this travel. It´s full");
+        if(!travel.getStatus())
+           throw new Exception("The selected trip is not available");
         client.setTravel(travel);
         clientRepository.save(client);
         travel.getPassenger().add(client);

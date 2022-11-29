@@ -54,8 +54,7 @@ public class Travel {
         this.idTravel = idTravel;
     }
 
-    public Boolean getStatus() {
-
-        return false;
+    public boolean getStatus(){
+        return this.status;
     }
 }
