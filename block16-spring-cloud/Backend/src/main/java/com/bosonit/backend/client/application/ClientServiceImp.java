@@ -4,7 +4,7 @@ import com.bosonit.backend.client.domain.Client;
 import com.bosonit.backend.client.infrastructure.dto.ClientInputDto;
 import com.bosonit.backend.client.infrastructure.dto.ClientOutputDto;
 import com.bosonit.backend.client.infrastructure.repository.ClientRepository;
-import jakarta.persistence.EntityNotFoundException;
+import com.bosonit.backend.exception.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,10 +25,10 @@ public class ClientServiceImp implements ClientService{
     }
 
     @Override
-    public ClientOutputDto getById(Long id) {
+    public ClientOutputDto getById(Long id) throws EntityNotFoundException {
         Optional<Client> client = clientRepository.findById(id);
        if(client.isEmpty())
-            throw  new EntityNotFoundException("Client does not exist");
+            throw  new EntityNotFoundException("Client does not exist",404);
         return new ClientOutputDto(client.get());
 
     }
@@ -43,7 +43,7 @@ public class ClientServiceImp implements ClientService{
     public ClientOutputDto updateCliente(Long id,ClientInputDto clientInputDto) {
         Optional<Client> client = clientRepository.findById(id);
         if (client.isEmpty())
-            throw new EntityNotFoundException("Client does not exist");
+            throw new EntityNotFoundException("Client does not exist",404);
         Client client1 = client.get();
         client1.setName(clientInputDto.getName());
         client1.setSurname(clientInputDto.getSurname());
@@ -60,7 +60,7 @@ public class ClientServiceImp implements ClientService{
     public String deleteClient(Long id) {
         Optional<Client> client = clientRepository.findById(id);
         if (client.isEmpty())
-            throw new EntityNotFoundException("Client does not exist");
+            throw new EntityNotFoundException("Client does not exist",404);
 
         clientRepository.deleteById(id);
         return "Client deleted";

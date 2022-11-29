@@ -2,11 +2,12 @@ package com.bosonit.backend.travel.application;
 
 import com.bosonit.backend.client.domain.Client;
 import com.bosonit.backend.client.infrastructure.repository.ClientRepository;
+import com.bosonit.backend.exception.EntityNotFoundException;
 import com.bosonit.backend.travel.domain.Travel;
 import com.bosonit.backend.travel.infrastructure.dto.TravelInputDto;
 import com.bosonit.backend.travel.infrastructure.dto.TravelOutputDto;
 import com.bosonit.backend.travel.infrastructure.repository.TravelRepository;
-import jakarta.persistence.EntityNotFoundException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -32,7 +33,7 @@ public class TravelServiceImp implements TravelService{
     public TravelOutputDto updateTravel(Long id, TravelInputDto travelInputDto) {
         Optional<Travel> travelOpt= travelRepository.findById(id);
         if(travelOpt.isEmpty())
-            throw new EntityNotFoundException("Travel does not exist");
+            throw new EntityNotFoundException("Travel does not exist",404);
         Travel travel = travelOpt.get();
         travel.setOrigin(travelInputDto.getOrigin());
         travel.setDestination(travelInputDto.getDestination());
@@ -49,7 +50,7 @@ public class TravelServiceImp implements TravelService{
     public TravelOutputDto findById(Long id) {
         Optional<Travel> travelOpt= travelRepository.findById(id);
         if (travelOpt.isEmpty())
-            throw  new  EntityNotFoundException("Travel does not exist");
+            throw  new  EntityNotFoundException("Travel does not exist",404);
 
         return new TravelOutputDto(travelOpt.get());
     }
@@ -58,7 +59,7 @@ public class TravelServiceImp implements TravelService{
     public String deleteTravel(Long id) {
         Optional<Travel> travelOpt= travelRepository.findById(id);
         if (travelOpt.isEmpty())
-            throw  new  EntityNotFoundException("Travel does not exist");
+            throw  new  EntityNotFoundException("Travel does not exist",404);
         travelRepository.deleteById(id);
 
         return "Viaje borrado";
@@ -66,8 +67,8 @@ public class TravelServiceImp implements TravelService{
 
     @Override
     public TravelOutputDto addPassenger(Long travelId, Long passengerId) throws Exception {
-        Travel travel = travelRepository.findById(travelId).orElseThrow(()->new EntityNotFoundException("Travel does not exist"));
-        Client client = clientRepository.findById(passengerId).orElseThrow(()->new EntityNotFoundException("Passenger does not exist"));
+        Travel travel = travelRepository.findById(travelId).orElseThrow(()->new EntityNotFoundException("Travel does not exist",404));
+        Client client = clientRepository.findById(passengerId).orElseThrow(()->new EntityNotFoundException("Passenger does not exist",404));
 
 
         if(travel.getPassenger().contains(client))
@@ -83,13 +84,13 @@ public class TravelServiceImp implements TravelService{
 
     @Override
     public Integer getTotalPassenger(Long travel) {
-        return travelRepository.findById(travel).orElseThrow(()->new EntityNotFoundException("Travel does not exist"))
+        return travelRepository.findById(travel).orElseThrow(()->new EntityNotFoundException("Travel does not exist",404))
                 .getPassenger().size();
     }
 
     @Override
     public TravelOutputDto changeTravelStatus(Long travelId, Boolean newStatus) {
-        Travel travel = travelRepository.findById(travelId).orElseThrow(()->new EntityNotFoundException("Travel does not exist"));
+        Travel travel = travelRepository.findById(travelId).orElseThrow(()->new EntityNotFoundException("Travel does not exist",404));
         travel.setStatus(newStatus);
         travelRepository.save(travel);
 
@@ -99,7 +100,7 @@ public class TravelServiceImp implements TravelService{
     @Override
     public Boolean getTravelStatus(Long travelId) {
 
-        return travelRepository.findById(travelId).orElseThrow(()->new  EntityNotFoundException("Travel does not exist"))
+        return travelRepository.findById(travelId).orElseThrow(()->new  EntityNotFoundException("Travel does not exist",404))
                 .getStatus();
     }
 }

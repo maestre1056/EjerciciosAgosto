@@ -6,6 +6,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -15,6 +16,7 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class Client implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,14 +26,15 @@ public class Client implements Serializable {
     private String name;
     @NotEmpty(message = "Field surname never can´t empty")
     private String surname;
-    @NotEmpty(message = "Field age never can´t empty")
+   // @NotEmpty(message = "Field age never can´t empty")
     private int age;
     private String email;
     @ManyToOne(fetch = FetchType.EAGER)
     private Travel travel;
-    @NotEmpty(message = "Field phone number never can´t empty")
-    @Size(min = 9,max = 9,message = "The length should be 9")
-    private Integer phoneNumber;
+   // @NotEmpty(message = "Field phone number never can´t empty")
+    //@Size(min = 9,max = 9,message = "The length should be 9")
+    @Column(unique = true)
+    private int phoneNumber;
 
 
     public Long getIdClient() {

@@ -10,7 +10,7 @@ public class ClientOutputDto {
     private String surname;
     private int age;
     private String email;
-    private Integer phoneNumber;
+    private int phoneNumber;
 
     public ClientOutputDto(Client client){
         this.idClient=client.getIdClient();

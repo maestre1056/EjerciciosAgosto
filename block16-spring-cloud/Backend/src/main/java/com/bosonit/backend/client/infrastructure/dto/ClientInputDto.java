@@ -9,7 +9,7 @@ public class ClientInputDto {
     private String surname;
     private int age;
     private String email;
-    private Integer phoneNumber;
+    private int phoneNumber;
 
 
 

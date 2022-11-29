@@ -5,6 +5,7 @@ import com.bosonit.backend.travel.infrastructure.dto.TravelInputDto;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -17,6 +18,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class Travel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
