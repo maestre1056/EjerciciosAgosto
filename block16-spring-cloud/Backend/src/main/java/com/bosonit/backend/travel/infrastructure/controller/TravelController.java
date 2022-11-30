@@ -42,5 +42,9 @@ public class TravelController {
     }
 
 
+    @GetMapping("verify/{id}")
+    public boolean verifyTrip(@PathVariable Long id){
+        return travelService.getTravelStatus(id);
+    }
 
 }
