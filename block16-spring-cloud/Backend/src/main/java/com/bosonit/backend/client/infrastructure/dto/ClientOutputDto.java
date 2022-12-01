@@ -1,6 +1,7 @@
 package com.bosonit.backend.client.infrastructure.dto;
 
 import com.bosonit.backend.client.domain.Client;
+import com.bosonit.backend.travel.domain.Travel;
 import lombok.Data;
 
 @Data
@@ -12,6 +13,7 @@ public class ClientOutputDto {
     private String email;
     private int phoneNumber;
 
+
     public ClientOutputDto(Client client){
         this.idClient=client.getIdClient();
         this.name= client.getName();
@@ -19,6 +21,7 @@ public class ClientOutputDto {
         this.age= client.getAge();
         this.email= client.getEmail();
         this.phoneNumber= client.getPhoneNumber();
+
 
     }
 }
