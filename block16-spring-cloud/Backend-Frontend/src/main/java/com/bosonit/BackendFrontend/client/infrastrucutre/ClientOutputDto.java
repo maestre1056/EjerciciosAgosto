@@ -9,7 +9,7 @@ import lombok.Data;
 public class ClientOutputDto {
     private Long idClient;
     private String name;
-    private String lastName;
+    private String surname;
     private Integer age;
     private String email;
     private Integer phoneNumber;

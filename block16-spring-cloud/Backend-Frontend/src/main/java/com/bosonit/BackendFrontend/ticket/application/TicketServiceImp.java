@@ -12,6 +12,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 @Service
 @RequiredArgsConstructor
 public class TicketServiceImp {
@@ -34,5 +37,9 @@ public class TicketServiceImp {
 
         Ticket ticket = new Ticket(client,travel);
         return new TicketOutputDto(ticketRepository.save(ticket));
+    }
+
+    public List<TicketOutputDto> getAll(){
+        return ticketRepository.findAll().stream().map(TicketOutputDto::new).toList();
     }
 }

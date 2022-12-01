@@ -17,7 +17,7 @@ public class TicketOutputDto {
 
     private String passengerName;
 
-    private String passengerLastname;
+    private String passengerSurname;
 
     private String passengerEmail;
 
@@ -33,7 +33,7 @@ public class TicketOutputDto {
         setIdTicket(ticket.getIdTicket());
         setIdPassenger(ticket.getPassengerId());
         setPassengerName(ticket.getPassengerName());
-        setPassengerLastname(ticket.getPassengerLastName());
+        setPassengerSurname(ticket.getPassengerSurname());
         setPassengerEmail(ticket.getPassengerEmail());
         setOriginTrip(ticket.getTripOrigin());
         setDestinationTrip(ticket.getTripDestination());

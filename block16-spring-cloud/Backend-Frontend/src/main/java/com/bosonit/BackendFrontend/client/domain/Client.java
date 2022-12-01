@@ -14,7 +14,7 @@ public class Client {
 
     private String name;
 
-    private String lastName;
+    private String surname;
 
     private Integer age;
 
@@ -27,7 +27,7 @@ public class Client {
     public Client(ClientOutputDto client){
         setIdClient(client.getIdClient());
         setName(client.getName());
-        setLastName(client.getLastName());
+        setSurname(client.getSurname());
         setAge(client.getAge());
         setEmail(client.getEmail());
         setPhoneNumber(client.getPhoneNumber());
