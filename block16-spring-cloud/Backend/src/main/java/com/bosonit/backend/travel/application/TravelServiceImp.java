@@ -7,7 +7,6 @@ import com.bosonit.backend.travel.domain.Travel;
 import com.bosonit.backend.travel.infrastructure.dto.TravelInputDto;
 import com.bosonit.backend.travel.infrastructure.dto.TravelOutputDto;
 import com.bosonit.backend.travel.infrastructure.repository.TravelRepository;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

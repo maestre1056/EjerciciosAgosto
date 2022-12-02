@@ -2,14 +2,12 @@ package com.bosonit.backend.client.domain;
 
 import com.bosonit.backend.client.infrastructure.dto.ClientInputDto;
 import com.bosonit.backend.travel.domain.Travel;
-import jakarta.persistence.*;
-import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -22,9 +20,9 @@ public class Client implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_client", nullable = false)
     private Long idClient;
-    @NotEmpty(message = "Field name never can´t empty")
+
     private String name;
-    @NotEmpty(message = "Field surname never can´t empty")
+
     private String surname;
    // @NotEmpty(message = "Field age never can´t empty")
     private int age;

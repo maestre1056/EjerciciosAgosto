@@ -1,6 +1,5 @@
 package com.bosonit.backend.client.infrastructure.dto;
 
-import com.bosonit.backend.client.domain.Client;
 import lombok.Data;
 
 @Data

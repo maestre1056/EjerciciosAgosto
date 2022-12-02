@@ -6,11 +6,11 @@ import com.bosonit.backend.client.infrastructure.dto.ClientOutputDto;
 import com.bosonit.backend.exception.ErrorMessage;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -26,7 +26,7 @@ public class ClientController {
     ClientService clientService;
 
     @PostMapping
-    public ResponseEntity<ClientOutputDto> addClient(@Valid @RequestBody ClientInputDto clientInputDto,
+    public ResponseEntity<ClientOutputDto> addClient(@Validated @RequestBody ClientInputDto clientInputDto,
                                                      BindingResult result){
         if (result.hasErrors()){
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST,this.formatMessage(result));

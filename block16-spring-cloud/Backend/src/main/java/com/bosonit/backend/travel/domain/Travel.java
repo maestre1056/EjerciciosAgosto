@@ -2,16 +2,14 @@ package com.bosonit.backend.travel.domain;
 
 import com.bosonit.backend.client.domain.Client;
 import com.bosonit.backend.travel.infrastructure.dto.TravelInputDto;
-import jakarta.persistence.*;
-import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -24,9 +22,9 @@ public class Travel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_travel", nullable = false)
     private Long idTravel;
-    @NotEmpty(message = "Field origin can not empty")
+
     private String origin;
-    @NotEmpty(message = "Field destination can not empty")
+
     private String destination;
     private LocalDateTime departureDate;
     private LocalDateTime arrivalDate;

@@ -4,7 +4,7 @@ import com.bosonit.backend.client.domain.Client;
 import com.bosonit.backend.client.infrastructure.dto.ClientInputDto;
 import com.bosonit.backend.client.infrastructure.dto.ClientOutputDto;
 import com.bosonit.backend.client.infrastructure.repository.ClientRepository;
-import com.bosonit.backend.exception.*;
+import com.bosonit.backend.exception.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
