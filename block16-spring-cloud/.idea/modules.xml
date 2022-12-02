@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/backend/Backend.iml" filepath="$PROJECT_DIR$/backend/Backend.iml" />
       <module fileurl="file://$PROJECT_DIR$/Backend-Frontend/Backend-Frontend.iml" filepath="$PROJECT_DIR$/Backend-Frontend/Backend-Frontend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/backend/backend.iml" filepath="$PROJECT_DIR$/backend/backend.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/block16-Spring-cloud.iml" filepath="$PROJECT_DIR$/.idea/block16-Spring-cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
     </modules>
   </component>
 </project>
