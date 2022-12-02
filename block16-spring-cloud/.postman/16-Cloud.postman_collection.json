@@ -1,0 +1,382 @@
+{
+	"info": {
+		"_postman_id": "c1018be2-c1f5-4bd5-b053-8d0fa1bd438d",
+		"name": "16-Cloud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22851801"
+	},
+	"item": [
+		{
+			"name": "Backend",
+			"item": [
+				{
+					"name": "Client",
+					"item": [
+						{
+							"name": "addClient",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Lou\",\r\n    \"surname\":\"Rios\",\r\n    \"age\":42,\r\n    \"email\":\"loumaestre@gmail.com\",\r\n    \"phoneNumber\":645754240\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/client",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"client"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/client",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"client"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/client/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"client",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateClient",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \"name\":\"Angelica\",\r\n    \"surname\":\"Maestre\",\r\n    \"age\":42,\r\n    \"email\":\"loumaestre@gmail.com\",\r\n    \"phoneNumber\":645754240\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/client/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"client",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Trip",
+					"item": [
+						{
+							"name": "createTravel",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"origin\":\"Toledo\",\r\n    \"destination\":\"San Sebastián\",\r\n    \"departureDate\":\"2022-11-12T14:00:00\",\r\n    \"arrivalDate\":\"2022-11-12T19:00:00\"\r\n\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/trip",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trip"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addPassenger",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trip/passenger/1/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trip",
+										"passenger",
+										"1",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "changeStatus",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trip/1/true",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trip",
+										"1",
+										"true"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getTotalPassenger",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trip/passenger/count/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trip",
+										"passenger",
+										"count",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trip/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trip",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateTrip",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"origin\":\"Madrid\",\r\n    \"destination\":\"Córdoba\",\r\n    \"departureDate\":\"2022-11-12T14:00:00\",\r\n    \"arrivalDate\":\"2022-11-12T21:00:00\",\r\n    \"status\":true\r\n\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/trip/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trip",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getStatusTravel",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Backend-Frontend",
+			"item": [
+				{
+					"name": "createTicket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/ticket/2/45",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"ticket",
+								"2",
+								"45"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllTickets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/ticket",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"ticket"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gateway",
+			"item": [
+				{
+					"name": "addTicket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Toni\",\r\n    \"surname\":\"Rios\",\r\n    \"age\":42,\r\n    \"email\":\"hierrr\",\r\n    \"phoneNumber\":645754240\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8084/client",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllClient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8084/client",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changeStatusTrip",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8084/trip/3/true",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"trip",
+								"3",
+								"true"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
